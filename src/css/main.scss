@@ -1,0 +1,123 @@
+// Header Font ==========================================================
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:200,200i,300,300i,400,400i,600,600i,700,700i,900');
+$header-font: 'Titillium Web', sans-serif;
+
+
+
+// Bootstrap / Bootswatch Themes ========================================
+@import './bootswatch/_bootstrap.scss';
+@import './bootswatch/_bootswatch.scss';
+
+
+
+// Colors ===============================================================
+$color-green: #37BC9B;
+$color-gray: #3d3d3f;
+$color-milk: #f6f5f3;
+$color-white: #f9f8fd;
+
+
+
+// Global Styles ========================================================
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $header-font;
+}
+
+
+
+// Header Styles ========================================================
+.header {
+	width: 100%;
+  font-family: $header-font;
+
+	.logo-wrap {
+		position: relative;
+    padding-top: 12px;
+    margin-bottom: -5px;
+
+    svg {
+      height: 40px;
+
+      g {
+        fill: $color-white;
+      }
+    }
+	}
+
+  .navigation {
+    list-style: none;
+    text-align: center;
+    position: relative;
+
+    &:after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+
+    a {
+      color: $color-milk;
+      transition: color 300ms ease;
+
+      &:hover {
+        color: $color-green;
+      }
+
+      &.home:hover ~ .h-rule,      &.home.active ~ .h-rule      { margin-left:  0%; }
+      &.about:hover ~ .h-rule,     &.about.active ~ .h-rule     { margin-left: 25%; }
+      &.portfolio:hover ~ .h-rule, &.portfolio.active ~ .h-rule { margin-left: 50%; }
+      &.contact:hover ~ .h-rule,   &.contact.active ~ .h-rule   { margin-left: 75%; }
+    }
+
+    li {
+      width: 25%;
+      padding: 20px 0;
+      float: left;
+    }
+
+    .h-rule {
+      width: 25%;
+      height: 4px;
+      background-color: $color-green;
+      position: absolute;
+      bottom: -1px;
+      transition: all 300ms ease;
+    }
+  }
+}
+
+
+
+// Hero Styles ==========================================================
+.hero {
+  width: 100%;
+  height: calc(98vh - 58px);
+  min-height: 600px;
+  // background-color: $color-green;
+  position: relative;
+
+  .head-underscore {
+    width: 60px;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.4);
+    margin: 15px 0;
+  }
+
+  .particle-wrapper {
+    width: 100%;
+    height: calc(98vh - 58px);
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    .particles {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
