@@ -1,17 +1,11 @@
 // Header Font ==========================================================
-@import url('https://fonts.googleapis.com/css?family=Titillium+Web:200,200i,300,300i,400,400i,600,600i,700,700i,900');
 $header-font: 'Titillium Web', sans-serif;
-
-
-
-// Bootstrap / Bootswatch Themes ========================================
-@import './bootswatch/_bootstrap.scss';
-@import './bootswatch/_bootswatch.scss';
 
 
 
 // Colors ===============================================================
 $color-green: #37BC9B;
+$color-dark: #333;
 $color-gray: #3d3d3f;
 $color-milk: #f6f5f3;
 $color-white: #f9f8fd;
@@ -19,6 +13,10 @@ $color-white: #f9f8fd;
 
 
 // Global Styles ========================================================
+body {
+  padding-top: 62px;
+}
+
 h1,
 h2,
 h3,
@@ -89,6 +87,20 @@ h6 {
       transition: all 300ms ease;
     }
   }
+
+  .social-networks {
+    list-style: none;
+    padding-top: 20px;
+
+    li {
+      padding: 0 10px;
+      float: right;
+
+      img {
+        width: 25px;
+      }
+    }
+  }
 }
 
 
@@ -98,8 +110,10 @@ h6 {
   width: 100%;
   height: calc(98vh - 58px);
   min-height: 600px;
-  // background-color: $color-green;
+  background-color: $color-dark;
+  color: $color-milk;
   position: relative;
+  margin-top: -21px;
 
   .head-underscore {
     width: 60px;
