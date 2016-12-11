@@ -115,11 +115,52 @@ h6 {
   position: relative;
   margin-top: -21px;
 
-  .head-underscore {
-    width: 60px;
-    height: 2px;
-    background-color: rgba(255, 255, 255, 0.4);
-    margin: 15px 0;
+  .hero-content {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+    svg {
+      width: 5vw;
+
+      g {
+        fill: $color-white;
+      }
+    }
+
+    .hero-content-copy {
+      padding: 20px 0 40px;
+
+      .welcome-message {
+        text-transform: uppercase;
+        font-size: 3vw;
+        margin: 0;
+      }
+
+      .name-line {
+        font-size: 6vw;
+        text-transform: uppercase;
+        margin: 0 0 4px;
+      }
+
+      .intro-line {
+        text-transform: uppercase;
+        font-size: 2vw;
+        margin: 0;
+      }
+    }
+
+    button {
+      margin: 0 5px;
+    }
+
+    .head-underscore {
+      width: 60px;
+      height: 2px;
+      background-color: rgba(255, 255, 255, 0.4);
+      margin: 15px 0;
+    }
   }
 
   .particle-wrapper {

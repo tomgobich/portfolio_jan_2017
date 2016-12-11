@@ -44,11 +44,13 @@ class Hero extends Component {
 								<Isvg src={ Logo }>
 	                <img src={ Logo } alt="Tom Gobich ~ Front-End Web Developer" />
 	              </Isvg>
-	              <h1 className="welcome-message">{ getWelcomeMessage() }</h1>
-								<h2 className="sub-line">I'm Tom Gobich</h2>
-								<h2 className="intro-line"><Typed strings={ strings } /></h2>
-								<p className="description-line"><span id="typed"></span></p>
-								<button>Contact Me</button>
+	              <div className="hero-content-copy">
+	              	<h1 className="welcome-message">{ getWelcomeMessage() }</h1>
+									<h2 className="name-line">I'm Tom Gobich</h2>
+									<h2 className="intro-line"><Typed strings={ strings } /></h2>
+	              </div>
+								<button className="btn btn-primary">Contact Me</button>
+								<button className="btn btn-default">View My Work</button>
 							</div>
 							<div className="particle-wrapper">
 								<Particles className="particles" params={this.state.particleConfig} />
