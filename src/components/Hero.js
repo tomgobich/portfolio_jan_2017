@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
-import $ from 'jquery';
 import Particles from 'react-particles-js';
 import ParticleConfig from '../assets/particles-config.json';
+import Isvg from 'react-inlinesvg';
+import Logo from '../images/logo.svg';
+import Typed from './Typed';
+import { getWelcomeMessage } from '../assets/welcome-message';
+
 
 
 class Hero extends Component {
 
-	constructor() {
-		super();
+	constructor(props) {
+		super(props);
 
 		// Initial state
 		this.state = {
@@ -15,11 +19,21 @@ class Hero extends Component {
 		};
 	}
 
-	componentWillMount() {
 
-	}
 
   render() {
+
+  	const strings = [
+  		"I'm a front-end web developer", 
+  		"Graduate from The Iron Yard",
+  		"Lover of technology (...especially smartphones)",
+  		"Life-long Kentucky Wildcat basketball fan",
+  		"My skills include HTML, CSS, JS, SQL, Database Design, Angular, Node/Express",
+  		"I'm currently learning React, Ember, Elm, and PostCSS",
+  		"My free time is passed utilizing Sudoku, Battlefield, and learning",
+  		"Wow, thanks for staying til the end! You can scroll down now!",
+  		"Reloading sequence...^4000"
+  	]
 
     return (
     	<div className="container-fluid">
@@ -27,13 +41,12 @@ class Hero extends Component {
 	    		<div className="col s12 m10 offset-m1">
 	    			<div className="hero">
 							<div className="hero-content">
-								<h2 className="intro-line">Welcome</h2>
-								<div className="head-underscore"></div>
+								<Isvg src={ Logo }>
+	                <img src={ Logo } alt="Tom Gobich ~ Front-End Web Developer" />
+	              </Isvg>
+	              <h1 className="welcome-message">{ getWelcomeMessage() }</h1>
 								<h2 className="sub-line">I'm Tom Gobich</h2>
-								<div id="typed-strings">
-									<p id="typedDescription" className="description-line">A Cincinnati Based Front-End Developer</p>
-									<p className="description-line">Currently Studying at The Iron Yard</p>
-								</div>
+								<h2 className="intro-line"><Typed strings={ strings } /></h2>
 								<p className="description-line"><span id="typed"></span></p>
 								<button>Contact Me</button>
 							</div>
