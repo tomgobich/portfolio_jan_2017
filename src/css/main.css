@@ -115,29 +115,31 @@ h6 {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+  z-index: 10;
 }
 .hero .hero-content svg {
-  width: 5vw;
+  width: 10%;
 }
 .hero .hero-content svg g {
   fill: #f9f8fd;
 }
 .hero .hero-content .hero-content-copy {
+  font-size: 34px;
   padding: 20px 0 40px;
 }
 .hero .hero-content .hero-content-copy .welcome-message {
   text-transform: uppercase;
-  font-size: 3vw;
+  font-size: 1em;
   margin: 0;
 }
 .hero .hero-content .hero-content-copy .name-line {
-  font-size: 6vw;
   text-transform: uppercase;
+  font-size: 2.4em;
   margin: 0 0 4px;
 }
 .hero .hero-content .hero-content-copy .intro-line {
   text-transform: uppercase;
-  font-size: 2vw;
+  font-size: 0.8em;
   margin: 0;
 }
 .hero .hero-content button {

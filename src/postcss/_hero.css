@@ -13,9 +13,10 @@
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+	 z-index: 10;
 
     svg {
-      width: 5vw;
+      width: 10%;
 
       g {
         fill: $color-white;
@@ -23,25 +24,26 @@
     }
 
     .hero-content-copy {
-      padding: 20px 0 40px;
+		font-size: 34px;
+		padding: 20px 0 40px;
 
-      .welcome-message {
-        text-transform: uppercase;
-        font-size: 3vw;
-        margin: 0;
-      }
+		.welcome-message {
+			text-transform: uppercase;
+			font-size: 1em;
+			margin: 0;
+		}
 
-      .name-line {
-        font-size: 6vw;
-        text-transform: uppercase;
-        margin: 0 0 4px;
-      }
+		.name-line {
+			text-transform: uppercase;
+			font-size: 2.4em;
+			margin: 0 0 4px;
+		}
 
-      .intro-line {
-        text-transform: uppercase;
-        font-size: 2vw;
-        margin: 0;
-      }
+		.intro-line {
+			text-transform: uppercase;
+			font-size: 0.8em;
+			margin: 0;
+		}
     }
 
     button {

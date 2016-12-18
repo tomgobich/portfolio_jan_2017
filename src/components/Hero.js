@@ -26,10 +26,12 @@ class Hero extends Component {
 	  		"Graduate from The Iron Yard",
 	  		"Lover of technology (...especially smartphones)",
 	  		"Life-long Kentucky Wildcat basketball fan",
-	  		"My skills include HTML, CSS, JS, SQL, Database Design, Angular, Node/Express",
-	  		"I'm currently learning React, Ember, Elm, and PostCSS",
-	  		"My free time is passed utilizing Sudoku, Battlefield, and learning",
-	  		"Wow, thanks for staying til the end! You can scroll down now!",
+	  		"A few of my skills are HTML, CSS/SASS, JS, jQuery, Angular, SQL",
+	  		"I'm currently learning React, Node, Elm, and PostCSS",
+	  		"I pass my free time with Sudoku, Battlefield, and learning",
+	  		"Wow, thanks for staying til the end!",
+			"Feel free to scroll down at any time!",
+			"Or... just keep playing with the particles... I won't judge!",
 	  		"Reloading sequence...^4000"
 	  	]
 
@@ -38,7 +40,7 @@ class Hero extends Component {
 			<div className="hero">
 				<div className="container-fluid full-height">
 					<div className="row full-height">
-				 		<div className="col-xs-12 full-height">
+				 		<div className="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 full-height">
 							<div className="hero-content">
 								<Isvg src={ Logo }>
 					            	<img src={ Logo } alt="Tom Gobich ~ Front-End Web Developer" />
