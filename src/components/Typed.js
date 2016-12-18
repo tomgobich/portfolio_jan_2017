@@ -9,15 +9,7 @@ class Typed extends Component {
 
 	constructor(props) {
 		super(props);
-
-		// Initial state
-		this.state = {
-			
-		};
 	}
-
-
-	
 
 	componentDidMount() {
 		$("#typed").typed({
@@ -28,11 +20,11 @@ class Typed extends Component {
 		});
 	}
 
-  render() {
-    return (
+  	render() {
+		return (
 			<span id="typed"></span>
-    );
-  }
+		);
+  	}
 }
 
 export default Typed;

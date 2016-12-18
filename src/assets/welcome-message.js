@@ -23,6 +23,8 @@ function getDayText(currentDay) {
 			case 6:
 				dayMessage = 'Happy Saturday!';
 				break;
+			default:
+				dayMessage = 'Good Day!';
 		}
 
 		return dayMessage;

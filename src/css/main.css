@@ -102,7 +102,7 @@ h6 {
 */
 .hero {
   width: 100%;
-  height: calc(98vh - 58px);
+  height: calc(98vh - 61px);
   min-height: 600px;
   background-color: #333;
   color: #f6f5f3;
@@ -141,6 +141,8 @@ h6 {
 }
 .hero .hero-content button {
   margin: 0 5px;
+  position: relative;
+  z-index: 10;
 }
 .hero .hero-content .head-underscore {
   width: 60px;

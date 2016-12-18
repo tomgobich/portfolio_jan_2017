@@ -3,7 +3,7 @@
 */
 .hero {
   width: 100%;
-  height: calc(98vh - 58px);
+  height: calc(98vh - 61px);
   min-height: 600px;
   background-color: $color-dark;
   color: $color-milk;
@@ -48,6 +48,8 @@
 
     button {
       margin: 0 5px;
+      position: relative;
+      z-index: 10;
     }
 
     .head-underscore {

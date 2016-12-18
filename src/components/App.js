@@ -4,14 +4,14 @@ import Hero from './Hero';
 
 class App extends Component {
 
-  render() {
-    return (
-      <div>
-        <Header />
-        <Hero />
-      </div>
-    );
-  }
+	render() {
+		return (
+			<div>
+				<Header />
+				<Hero />
+			</div>
+		);
+	}
 }
 
 export default App;

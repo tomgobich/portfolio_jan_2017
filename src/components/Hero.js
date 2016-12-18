@@ -19,36 +19,34 @@ class Hero extends Component {
 		};
 	}
 
-
-
   render() {
 
-  	const strings = [
-  		"I'm a front-end web developer", 
-  		"Graduate from The Iron Yard",
-  		"Lover of technology (...especially smartphones)",
-  		"Life-long Kentucky Wildcat basketball fan",
-  		"My skills include HTML, CSS, JS, SQL, Database Design, Angular, Node/Express",
-  		"I'm currently learning React, Ember, Elm, and PostCSS",
-  		"My free time is passed utilizing Sudoku, Battlefield, and learning",
-  		"Wow, thanks for staying til the end! You can scroll down now!",
-  		"Reloading sequence...^4000"
-  	]
+	  	const strings = [
+	  		"I'm a front-end web developer",
+	  		"Graduate from The Iron Yard",
+	  		"Lover of technology (...especially smartphones)",
+	  		"Life-long Kentucky Wildcat basketball fan",
+	  		"My skills include HTML, CSS, JS, SQL, Database Design, Angular, Node/Express",
+	  		"I'm currently learning React, Ember, Elm, and PostCSS",
+	  		"My free time is passed utilizing Sudoku, Battlefield, and learning",
+	  		"Wow, thanks for staying til the end! You can scroll down now!",
+	  		"Reloading sequence...^4000"
+	  	]
 
-    return (
-    	<div className="container-fluid">
-    		<div className="row">
-	    		<div className="col s12 m10 offset-m1">
-	    			<div className="hero">
+		return (
+			<div className="container-fluid">
+				<div className="row">
+			 		<div className="col s12 m10 offset-m1">
+			 			<div className="hero">
 							<div className="hero-content">
 								<Isvg src={ Logo }>
-	                <img src={ Logo } alt="Tom Gobich ~ Front-End Web Developer" />
-	              </Isvg>
-	              <div className="hero-content-copy">
-	              	<h1 className="welcome-message">{ getWelcomeMessage() }</h1>
+					            	<img src={ Logo } alt="Tom Gobich ~ Front-End Web Developer" />
+					            </Isvg>
+								<div className="hero-content-copy">
+									<h1 className="welcome-message">{ getWelcomeMessage() }</h1>
 									<h2 className="name-line">I'm Tom Gobich</h2>
 									<h2 className="intro-line"><Typed strings={ strings } /></h2>
-	              </div>
+								</div>
 								<button className="btn btn-primary">Contact Me</button>
 								<button className="btn btn-default">View My Work</button>
 							</div>
@@ -56,11 +54,11 @@ class Hero extends Component {
 								<Particles className="particles" params={this.state.particleConfig} />
 							</div>
 						</div>
-	    		</div>
-	    	</div>
-    	</div>
-    );
-  }
+			 		</div>
+		 		</div>
+			</div>
+		);
+  	}
 }
 
 export default Hero;
