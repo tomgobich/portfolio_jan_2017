@@ -20,10 +20,10 @@ const Header = (props) => {
 						<div className="row">
 							<div className="col-md-9">
 								<nav className="navigation">
-									<a className="home"><li>Home</li></a>
-									<a className="about"><li>About</li></a>
-									<a className="portfolio"><li>Portfolio</li></a>
-									<a className="contact"><li>Contact</li></a>
+									<a className="home" href="#home"><li>Home</li></a>
+									<a className="about" href="#about"><li>About</li></a>
+									<a className="portfolio" href="#portfolio"><li>Portfolio</li></a>
+									<a className="contact" href="#contact"><li>Contact</li></a>
 									<div className="h-rule"></div>
 								</nav>
 							</div>

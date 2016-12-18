@@ -36,7 +36,6 @@ class Hero extends Component {
 	  	]
 
 		return (
-
 			<div className="hero">
 				<div className="container-fluid full-height">
 					<div className="row full-height">
