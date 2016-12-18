@@ -7,10 +7,6 @@ require('typed.js');
 
 class Typed extends Component {
 
-	constructor(props) {
-		super(props);
-	}
-
 	componentDidMount() {
 		$("#typed").typed({
 			strings: this.props.strings,
