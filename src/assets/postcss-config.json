@@ -1,0 +1,15 @@
+{
+	"use": [
+		"autoprefixer",
+		"postcss-simple-vars",
+		"postcss-nested",
+		"postcss-mixins"
+	],
+	"autoprefixer": {
+		"browsers": "> 5%"
+	},
+	"input": "src/postcss/main.css",
+	"output": "src/css/main.css",
+	"local-plugins": true,
+	"watch": true
+}

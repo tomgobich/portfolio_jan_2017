@@ -1,9 +1,4 @@
-// Header Font ==========================================================
 $header-font: 'Titillium Web', sans-serif;
-
-
-
-// Colors ===============================================================
 $color-green: #37BC9B;
 $color-dark: #333;
 $color-gray: #3d3d3f;
@@ -12,7 +7,9 @@ $color-white: #f9f8fd;
 
 
 
-// Global Styles ========================================================
+/* 
+  Global Styles
+*/
 body {
   padding-top: 83px;
 }
@@ -28,7 +25,9 @@ h6 {
 
 
 
-// Header Styles ========================================================
+/* 
+  Header Styles
+*/
 .header {
 	width: 100%;
   font-family: $header-font;
@@ -105,7 +104,9 @@ h6 {
 
 
 
-// Hero Styles ==========================================================
+/* 
+  Hero Styles
+*/
 .hero {
   width: 100%;
   height: calc(98vh - 58px);
@@ -179,7 +180,9 @@ h6 {
 
 
 
-// TypedJS Styles =======================================================
+/* 
+  TypedJS Styles
+*/
 .typed-cursor{
   opacity: 1;
   -webkit-animation: blink 0.7s infinite;
