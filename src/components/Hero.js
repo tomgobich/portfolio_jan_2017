@@ -34,10 +34,11 @@ class Hero extends Component {
 	  	]
 
 		return (
-			<div className="container-fluid">
-				<div className="row">
-			 		<div className="col s12 m10 offset-m1">
-			 			<div className="hero">
+
+			<div className="hero">
+				<div className="container-fluid full-height">
+					<div className="row full-height">
+				 		<div className="col-xs-12 full-height">
 							<div className="hero-content">
 								<Isvg src={ Logo }>
 					            	<img src={ Logo } alt="Tom Gobich ~ Front-End Web Developer" />
@@ -50,12 +51,12 @@ class Hero extends Component {
 								<button className="btn btn-primary">Contact Me</button>
 								<button className="btn btn-default">View My Work</button>
 							</div>
-							<div className="particle-wrapper">
-								<Particles className="particles" params={this.state.particleConfig} />
-							</div>
 						</div>
 			 		</div>
 		 		</div>
+				<div className="particle-wrapper">
+					<Particles className="particles" params={this.state.particleConfig} />
+				</div>
 			</div>
 		);
   	}

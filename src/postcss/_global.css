@@ -11,7 +11,7 @@ $color-white: #f9f8fd;
   Global Styles
 */
 body {
-  padding-top: 83px;
+  padding-top: 62px;
 }
 
 h1,
@@ -21,6 +21,10 @@ h4,
 h5,
 h6 {
   font-family: $header-font;
+}
+
+.full-height {
+	height: 100%;
 }
 
 

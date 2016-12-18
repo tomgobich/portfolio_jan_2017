@@ -2,7 +2,7 @@
   Global Styles
 */
 body {
-  padding-top: 83px;
+  padding-top: 62px;
 }
 h1,
 h2,
@@ -11,6 +11,9 @@ h4,
 h5,
 h6 {
   font-family: 'Titillium Web', sans-serif;
+}
+.full-height {
+	height: 100%;
 }
 /*
   TypedJS Styles
@@ -102,12 +105,10 @@ h6 {
 */
 .hero {
   width: 100%;
-  height: calc(98vh - 61px);
-  min-height: 600px;
+  height: 100%;
   background-color: #333;
   color: #f6f5f3;
   position: relative;
-  margin-top: -21px;
 }
 .hero .hero-content {
   text-align: center;

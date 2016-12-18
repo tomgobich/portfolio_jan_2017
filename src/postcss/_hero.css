@@ -3,12 +3,10 @@
 */
 .hero {
   width: 100%;
-  height: calc(98vh - 61px);
-  min-height: 600px;
+  height: 100%;
   background-color: $color-dark;
   color: $color-milk;
   position: relative;
-  margin-top: -21px;
 
   .hero-content {
     text-align: center;
