@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "autoprefixer": "^6.5.4",
     "postcss-cli": "^2.6.0",
     "postcss-import": "^9.0.0",
     "postcss-mixins": "^5.4.0",
