@@ -1,0 +1,76 @@
+/*
+  Header Styles
+*/
+.header {
+	width: 100%;
+  font-family: $header-font;
+
+	.logo-wrap {
+		position: relative;
+    padding-top: 12px;
+    margin-bottom: -5px;
+
+    svg {
+      height: 40px;
+
+      g {
+        fill: $color-white;
+      }
+    }
+	}
+
+  .navigation {
+    list-style: none;
+    text-align: center;
+    position: relative;
+
+    &:after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+
+    a {
+      color: $color-milk;
+      transition: color 300ms ease;
+
+      &:hover {
+        color: $color-green;
+      }
+
+      &.home:hover ~ .h-rule,      &.home.active ~ .h-rule      { margin-left:  0%; }
+      &.about:hover ~ .h-rule,     &.about.active ~ .h-rule     { margin-left: 25%; }
+      &.portfolio:hover ~ .h-rule, &.portfolio.active ~ .h-rule { margin-left: 50%; }
+      &.contact:hover ~ .h-rule,   &.contact.active ~ .h-rule   { margin-left: 75%; }
+    }
+
+    li {
+      width: 25%;
+      padding: 20px 0;
+      float: left;
+    }
+
+    .h-rule {
+      width: 25%;
+      height: 4px;
+      background-color: $color-green;
+      position: absolute;
+      bottom: -1px;
+      transition: all 300ms ease;
+    }
+  }
+
+  .social-networks {
+    list-style: none;
+    padding-top: 20px;
+
+    li {
+      padding: 0 10px;
+      float: right;
+
+      img {
+        width: 25px;
+      }
+    }
+  }
+}

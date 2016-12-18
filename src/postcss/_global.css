@@ -1,0 +1,41 @@
+$header-font: 'Titillium Web', sans-serif;
+$color-green: #37BC9B;
+$color-dark: #333;
+$color-gray: #3d3d3f;
+$color-milk: #f6f5f3;
+$color-white: #f9f8fd;
+
+
+
+/*
+  Global Styles
+*/
+body {
+  padding-top: 83px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $header-font;
+}
+
+
+
+/*
+  TypedJS Styles
+*/
+.typed-cursor{
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+@keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
