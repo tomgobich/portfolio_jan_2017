@@ -8,17 +8,17 @@ class App extends Component {
 	render() {
 
 		let options = {
-			activeClass:          	'active',
-			anchors:              	['home', 'about'],
-			arrowNavigation:      	true,
-			className:            	'SectionContainer',
-			delay:                	1000,
-			navigation:          	true,
-			scrollBar:            	false,
-			sectionClassName:     	'Section',
-			sectionPaddingTop:    	'0',
-			sectionPaddingBottom: 	'0',
-			verticalAlign:        	false
+			activeClass:           'active',
+			anchors:               ['home', 'about'],
+			arrowNavigation:       true,
+			className:             'SectionContainer',
+			delay:                 1000,
+			navigation:          	 true,
+			scrollBar:             false,
+			sectionClassName:      'Section',
+			sectionPaddingTop:     '0',
+			sectionPaddingBottom:  '0',
+			verticalAlign:         false
 		};
 
 		return (
