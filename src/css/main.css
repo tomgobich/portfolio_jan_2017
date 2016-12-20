@@ -15,6 +15,12 @@ h6 {
 .full-height {
 	height: 100%;
 }
+.Navigation-Anchor {
+  background-color: #3d3d3f;
+}
+.Navigation-Anchor.active {
+  background-color: #37BC9B;
+}
 /*
   TypedJS Styles
 */
@@ -29,6 +35,18 @@ h6 {
   50% { opacity:0; }
   100% { opacity:1; }
 }
+.animated {
+  visibility: visible !important;
+}
+/*
+  Transition Animations
+*/
+button {
+  transition: all 300ms ease;
+}
+.nav-small-menu-icon {
+  transition: all 300ms ease;
+}
 /*
   Header Styles
 */
@@ -38,8 +56,7 @@ h6 {
 }
 .header .logo-wrap {
   position: relative;
-  padding-top: 12px;
-  margin-bottom: -5px;
+  padding: 12px 0 4px;
 }
 .header .logo-wrap svg {
   height: 40px;
@@ -99,6 +116,82 @@ h6 {
 }
 .header .social-networks li img {
   width: 25px;
+}
+.header .nav-small .nav-small-menu-icon {
+  display: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.8em;
+  padding: 17px 0;
+  float: right;
+  cursor: pointer;
+}
+.header .nav-small .nav-small-menu-icon:hover,
+      .header .nav-small .nav-small-menu-icon.active {
+  color: #f9f8fd;
+}
+.nav-small-content {
+  visibility: hidden;
+  width: 100%;
+  height: 100vh;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -999;
+
+
+}
+.nav-small-content .nav-small-content-wrapper {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.nav-small-content .nav-small-content-wrapper h3 {
+  color: #f6f5f3;
+  padding: 0 0 40px;
+  margin: 0;
+}
+.nav-small-content .nav-small-content-wrapper a {
+  color: #f6f5f3;
+  transition: color 300ms ease;
+  text-decoration: none;
+}
+.nav-small-content .nav-small-content-wrapper a:hover,
+      .nav-small-content .nav-small-content-wrapper a.active {
+  color: #37BC9B;
+}
+.nav-small-content .nav-small-content-wrapper .social-networks {
+  max-width: 300px;
+  list-style: none;
+  padding-bottom: 30px;
+  margin: 0 auto;
+}
+.nav-small-content .nav-small-content-wrapper .social-networks:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.nav-small-content .nav-small-content-wrapper .social-networks li {
+  display: inline-block;
+  padding: 0 10px;
+}
+.nav-small-content .nav-small-content-wrapper .navigation {
+  width: 100%;
+  list-style: none;
+}
+.nav-small-content .nav-small-content-wrapper .navigation li {
+  display: block;
+  font-size: 1.4em;
+  padding: 6px 0;
+}
+@media screen and (max-width: 995px) {
+  .header .nav-large {
+    display: none;
+  }
+  .header .nav-small .nav-small-menu-icon {
+    display: inline-block;
+  }
 }
 /*
   Hero Styles
