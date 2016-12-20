@@ -27,6 +27,14 @@ h6 {
 	height: 100%;
 }
 
+.Navigation-Anchor {
+  background-color: $color-gray;
+
+  &.active {
+    background-color: $color-green;
+  }
+}
+
 
 
 /*

@@ -1,0 +1,17 @@
+$site-transition-time: 300ms;
+$site-transition: all $site-transition-time ease;
+
+.animated {
+  visibility: visible !important;
+}
+
+/*
+  Transition Animations
+*/
+button {
+  transition: $site-transition;
+}
+
+.nav-small-menu-icon {
+  transition: $site-transition;
+}
