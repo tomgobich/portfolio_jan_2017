@@ -2,6 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://tomgobich.com/tiy-portfolio",
   "devDependencies": {
     "postcss-cli": "^2.6.0",
     "postcss-import": "^9.0.0",
@@ -12,6 +13,7 @@
   },
   "dependencies": {
     "bootstrap": "^3.3.7",
+    "fullpage.js": "^2.9.2",
     "particles.js": "^2.0.0",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",

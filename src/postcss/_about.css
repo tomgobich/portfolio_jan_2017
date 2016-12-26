@@ -1,0 +1,92 @@
+
+.about {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 80px 0 70px;
+
+  h2 {
+    margin: 0;
+  }
+
+  .about-me {
+
+  }
+
+  .education {
+    text-align: right;
+
+    .education-wrapper {
+      margin-top: 24px;
+
+      &:after {
+        content: '';
+        display: table;
+        clear: both;
+      }
+
+      .content {
+        width: 100%;
+        padding: 4px 10px 4px 0;
+        margin-bottom: 8px;
+
+        &.tiy {
+          border-right: 2px solid $color-tiy;
+        }
+
+        &.cstate {
+          border-right: 2px solid $color-cstate;
+        }
+
+        h4,
+        h5,
+        p {
+          padding: 0 0 4px;
+          margin: 0;
+        }
+
+        h4 {
+          font-weight: 500;
+        }
+
+        p {
+          font-style: italic;
+          font-weight: 200;
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .about {
+
+    .education {
+      text-align: left;
+      padding-top: 40px;
+
+      #educationHeaderUnderscore {
+        float: left;
+      }
+
+      .education-wrapper {
+
+        .content {
+          padding: 4px 4px 4px 10px;
+
+          &.tiy {
+            border-right: none;
+            border-left: 2px solid $color-tiy;
+          }
+
+          &.cstate {
+            border-right: none;
+            border-left: 2px solid $color-cstate;
+          }
+        }
+      }
+    }
+  }
+}

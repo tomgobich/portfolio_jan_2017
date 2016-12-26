@@ -1,6 +1,8 @@
-/*
-  Header Styles
-*/
+
+.navbar {
+  border-bottom: none;
+}
+
 .header {
 	width: 100%;
   font-family: $header-font;
@@ -10,7 +12,7 @@
     padding: 12px 0 4px;
 
     svg {
-      height: 40px;
+      height: 30px;
 
       g {
         fill: $color-white;
@@ -44,7 +46,7 @@
 
     li {
       width: 25%;
-      padding: 20px 0;
+      padding: 14px 0 15px;
       float: left;
     }
 
@@ -60,7 +62,7 @@
 
   .social-networks {
     list-style: none;
-    padding-top: 20px;
+    padding-top: 14px;
 
     li {
       padding: 0 10px;
@@ -98,7 +100,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: -999;
+  z-index: 999;
 
   .nav-small-content-wrapper {
     text-align: center;

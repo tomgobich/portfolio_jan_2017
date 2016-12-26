@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+import $ from 'jquery';
 import Particles from 'react-particles-js';
 import ParticleConfig from '../assets/particles-config.json';
 import Isvg from 'react-inlinesvg';
 import Logo from '../images/logo.svg';
 import Typed from './Typed';
+import AnimatedButton from './AnimatedButton';
 import { getWelcomeMessage } from '../assets/welcome-message';
 
 
@@ -18,6 +20,16 @@ class Hero extends Component {
 			particleConfig: ParticleConfig,
 		};
 	}
+
+
+
+  addRubberBandAnimation(idString) {
+    alert('hovering')
+    console.log($(idString));
+    $(idString).addClass('animated infinite rubberBand')
+  }
+
+
 
   render() {
 
@@ -49,8 +61,8 @@ class Hero extends Component {
 									<h2 className="name-line">I'm Tom Gobich</h2>
 									<h2 className="intro-line"><Typed strings={ strings } /></h2>
 								</div>
-								<button className="btn btn-primary">Contact Me</button>
-								<button className="btn btn-default">View My Work</button>
+								<AnimatedButton idName="btnContact" classList="btn btn-primary" text="Contact Me" />
+                <AnimatedButton idName="btnPortfolio" classList="btn btn-default" text="View My Work" />
 							</div>
 						</div>
 			 		</div>
@@ -58,6 +70,9 @@ class Hero extends Component {
 				<div className="particle-wrapper">
 					<Particles className="particles" params={this.state.particleConfig} />
 				</div>
+        <div className="chevron-down">
+          <i className="fa fa-chevron-down animated infinite fadeInDown" aria-hidden="true"></i>
+        </div>
 			</div>
 		);
   }

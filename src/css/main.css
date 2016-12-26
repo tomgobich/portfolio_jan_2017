@@ -2,7 +2,9 @@
   Global Styles
 */
 body {
-  padding-top: 62px;
+  padding-top: 51px;
+  background-color: #f9f8fd;
+  color: #333;
 }
 h1,
 h2,
@@ -12,14 +14,26 @@ h5,
 h6 {
   font-family: 'Titillium Web', sans-serif;
 }
+.text-center {
+  text-align: center;
+}
+.text-block {
+  line-height: 1.6em;
+}
 .full-height {
 	height: 100%;
 }
-.Navigation-Anchor {
-  background-color: #3d3d3f;
+.header-underscore {
+  width: 60px;
+  height: 2px;
+  background-color: #333;
+  margin: 6px 0 16px;
 }
-.Navigation-Anchor.active {
-  background-color: #37BC9B;
+.header-underscore.right {
+  float: right;
+}
+.header-underscore.center {
+  margin: 6px auto 16px;
 }
 /*
   TypedJS Styles
@@ -47,9 +61,9 @@ button {
 .nav-small-menu-icon {
   transition: all 300ms ease;
 }
-/*
-  Header Styles
-*/
+.navbar {
+  border-bottom: none;
+}
 .header {
 	width: 100%;
   font-family: 'Titillium Web', sans-serif;
@@ -59,7 +73,7 @@ button {
   padding: 12px 0 4px;
 }
 .header .logo-wrap svg {
-  height: 40px;
+  height: 30px;
 }
 .header .logo-wrap svg g {
   fill: #f9f8fd;
@@ -95,7 +109,7 @@ button {
 }
 .header .navigation li {
   width: 25%;
-  padding: 20px 0;
+  padding: 14px 0 15px;
   float: left;
 }
 .header .navigation .h-rule {
@@ -108,7 +122,7 @@ button {
 }
 .header .social-networks {
   list-style: none;
-  padding-top: 20px;
+  padding-top: 14px;
 }
 .header .social-networks li {
   padding: 0 10px;
@@ -137,7 +151,7 @@ button {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: -999;
+  z-index: 999;
 
 
 }
@@ -193,12 +207,9 @@ button {
     display: inline-block;
   }
 }
-/*
-  Hero Styles
-*/
 .hero {
   width: 100%;
-  height: calc(100% - 62px);
+  height: calc(100vh - 51px);
   background-color: #333;
   font-size: 34px;
   color: #f6f5f3;
@@ -248,14 +259,21 @@ button {
 }
 .hero .particle-wrapper {
   width: 100%;
-  height: calc(98vh - 58px);
+  height: calc(100vh - 51px);
   position: absolute;
   top: 0;
   left: 0;
 }
-.hero .particle-wrapper .particles {
+.hero .particle-wrapper canvas {
+  height: calc(100vh - 51px) !important;
+}
+.hero .chevron-down {
   width: 100%;
-  height: 100%;
+  font-size: 16px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  bottom: 20px;
 }
 @media screen and (max-width: 740px) {
   .hero {
@@ -269,4 +287,129 @@ button {
   .hero .hero-content svg {
     width: 15%;
   }
+}
+.about {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 80px 0 70px;
+}
+.about h2 {
+  margin: 0;
+}
+.about .about-me {}
+.about .education {
+  text-align: right;
+}
+.about .education .education-wrapper {
+  margin-top: 24px;
+}
+.about .education .education-wrapper:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.about .education .education-wrapper .content {
+  width: 100%;
+  padding: 4px 10px 4px 0;
+  margin-bottom: 8px;
+}
+.about .education .education-wrapper .content.tiy {
+  border-right: 2px solid rgb(42, 114, 159);
+}
+.about .education .education-wrapper .content.cstate {
+  border-right: 2px solid rgb(67, 185, 86);
+}
+.about .education .education-wrapper .content h4,
+        .about .education .education-wrapper .content h5,
+        .about .education .education-wrapper .content p {
+  padding: 0 0 4px;
+  margin: 0;
+}
+.about .education .education-wrapper .content h4 {
+  font-weight: 500;
+}
+.about .education .education-wrapper .content p {
+  font-style: italic;
+  font-weight: 200;
+  padding: 0;
+}
+@media screen and (max-width: 768px) {
+  .about .education {
+    text-align: left;
+    padding-top: 40px;
+  }
+  .about .education #educationHeaderUnderscore {
+    float: left;
+  }
+  .about .education .education-wrapper .content {
+    padding: 4px 4px 4px 10px;
+  }
+  .about .education .education-wrapper .content.tiy {
+    border-right: none;
+    border-left: 2px solid rgb(42, 114, 159);
+  }
+  .about .education .education-wrapper .content.cstate {
+    border-right: none;
+    border-left: 2px solid rgb(67, 185, 86);
+  }
+}
+.portfolio {
+  width: 100%;
+  padding: 80px 0 70px;
+}
+.portfolio .portfolio-item {
+  margin-bottom: 40px;
+}
+.portfolio .portfolio-item:hover .portfolio-image-wrapper .portfolio-content-wrapper {
+  visibility: visible;
+  opacity: 1;
+  top: 10px;
+}
+.portfolio .portfolio-item .portfolio-image-wrapper {
+  height: 293px;
+  padding: 10px 10px 0;
+  position: relative;
+  overflow: hidden;
+  transition: max-height 1000ms;
+}
+.portfolio .portfolio-item .portfolio-image-wrapper .portfolio-image {
+  width: 100%;
+}
+.portfolio .portfolio-item .portfolio-image-wrapper .dev-icons {
+  width: calc(100% - 20px);
+  color: #f6f5f3;
+  font-size: 1.1em;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 6px 6px 2px;
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+}
+.portfolio .portfolio-item .portfolio-image-wrapper .dev-icons i {
+  padding: 0 2px;
+}
+.portfolio .portfolio-item .portfolio-image-wrapper .portfolio-content-wrapper {
+  visibility: hidden;
+  opacity: 0;
+  width: calc(100% - 20px);
+  height: calc(100% - 41px);
+  background-color: #37BC9B;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 10px;
+  transition: opacity 600ms ease;
+}
+.portfolio .portfolio-item .portfolio-image-wrapper .portfolio-content-wrapper .portfolio-content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.portfolio .portfolio-item .portfolio-image-wrapper .portfolio-content-wrapper .portfolio-content h3 {
+  padding: 10px 0;
+  margin: 0;
+}
+.portfolio .portfolio-item .portfolio-image-wrapper .portfolio-content-wrapper .portfolio-content p {
+  max-height: 90px;
+  margin: 0;
 }

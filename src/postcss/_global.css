@@ -4,6 +4,8 @@ $color-dark: #333;
 $color-gray: #3d3d3f;
 $color-milk: #f6f5f3;
 $color-white: #f9f8fd;
+$color-tiy: rgb(42, 114, 159);
+$color-cstate: rgb(67, 185, 86);
 
 
 
@@ -11,7 +13,9 @@ $color-white: #f9f8fd;
   Global Styles
 */
 body {
-  padding-top: 62px;
+  padding-top: 51px;
+  background-color: $color-white;
+  color: $color-dark;
 }
 
 h1,
@@ -23,15 +27,30 @@ h6 {
   font-family: $header-font;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.text-block {
+  line-height: 1.6em;
+}
+
 .full-height {
 	height: 100%;
 }
 
-.Navigation-Anchor {
-  background-color: $color-gray;
+.header-underscore {
+  width: 60px;
+  height: 2px;
+  background-color: $color-dark;
+  margin: 6px 0 16px;
 
-  &.active {
-    background-color: $color-green;
+  &.right {
+    float: right;
+  }
+
+  &.center {
+    margin: 6px auto 16px;
   }
 }
 
