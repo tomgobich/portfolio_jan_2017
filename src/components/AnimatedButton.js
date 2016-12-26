@@ -7,15 +7,15 @@ class AnimatedButton extends Component {
   constructor(props) {
 		super(props);
 
-		this.addRubberBandAnimation     = this.addRubberBandAnimation.bind(this)
-    this.removeRubberBandAnimation  = this.removeRubberBandAnimation.bind(this)
+		this.addAnimation     = this.addAnimation.bind(this)
+    this.removeAnimation  = this.removeAnimation.bind(this)
 	}
 
-  addRubberBandAnimation() {
+  addAnimation() {
     $('#' + this.props.idName).addClass('animated pulse')
   }
 
-  removeRubberBandAnimation() {
+  removeAnimation() {
     $('#' + this.props.idName).removeClass('animated pulse')
   }
 
@@ -25,8 +25,8 @@ class AnimatedButton extends Component {
 		return (
 			<button id={this.props.idName}
               className={this.props.classList}
-              onMouseEnter={this.addRubberBandAnimation}
-              onMouseLeave={this.removeRubberBandAnimation}>
+              onMouseEnter={this.addAnimation}
+              onMouseLeave={this.removeAnimation}>
               {this.props.text}
       </button>
 		);

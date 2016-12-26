@@ -8,67 +8,47 @@
 
     &:hover {
 
-      .portfolio-image-wrapper {
 
-        .portfolio-content-wrapper {
-          visibility: visible;
-          opacity: 1;
-          top: 10px;
-        }
-      }
     }
 
-    .portfolio-image-wrapper {
-      height: 293px;
-      padding: 10px 10px 0;
+    .portfolio-item-wrapper {
+      width: 100%;
+      height: 100%;
       position: relative;
       overflow: hidden;
-      transition: max-height 1000ms;
+
+      .portfolio-item-overlay {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.85);
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+      }
 
       .portfolio-image {
         width: 100%;
       }
 
-      .dev-icons {
-        width: calc(100% - 20px);
+      .portfolio-item-content {
         color: $color-milk;
-        font-size: 1.1em;
-        background-color: rgba(0, 0, 0, 0.4);
-        padding: 6px 6px 2px;
+        padding: 0 20px;
         position: absolute;
-        bottom: 0;
-        left: 10px;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
 
-        i {
-          padding: 0 2px;
+        h3 {
+          padding: 0 0 10px;
+          margin: 0;
         }
-      }
 
-      .portfolio-content-wrapper {
-        visibility: hidden;
-        opacity: 0;
-        width: calc(100% - 20px);
-        height: calc(100% - 41px);
-        background-color: $color-green;
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        padding: 10px;
-        transition: opacity 600ms ease;
+        .dev-icons {
+          padding: 0 0 8px;
 
-        .portfolio-content {
-          position: relative;
-          top: 50%;
-          transform: translateY(-50%);
-
-          h3 {
-            padding: 10px 0;
-            margin: 0;
-          }
-
-          p {
-            max-height: 90px;
-            margin: 0;
+          i {
+            padding: 0 4px;
           }
         }
       }
