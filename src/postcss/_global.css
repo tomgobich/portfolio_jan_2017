@@ -52,6 +52,10 @@ h6 {
   &.center {
     margin: 6px auto 16px;
   }
+
+  &.white {
+    background-color: $color-milk;
+  }
 }
 
 

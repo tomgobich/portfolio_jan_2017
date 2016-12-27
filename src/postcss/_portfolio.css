@@ -20,37 +20,59 @@
       .portfolio-item-overlay {
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.85);
+        /*background-color: rgba(0, 0, 0, 0.85);*/
         position: absolute;
         top: 0;
         left: 0;
         display: none;
+
+        .portfolio-item-overlay-gradient {
+          width: 100%;
+          height: 100%;
+          background-color: rgba(55, 188, 155, 0.8);
+          background: linear-gradient(15deg, rgba(55, 188, 155, 0.8), rgba(93, 156, 236, 0.4));
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 10;
+        }
+
+        .portfolio-item-content {
+          width: 100%;
+          height: 100%;
+          position: relative;
+          z-index: 20;
+
+          .portfolio-item-content-center {
+            color: $color-milk;
+            padding: 0 20px;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+
+            h3 {
+              padding: 0 0 10px;
+              margin: 0;
+            }
+
+            p {
+              margin: 0;
+            }
+
+            .dev-icons {
+              padding: 0 0 8px;
+
+              i {
+                padding: 0 4px;
+              }
+            }
+          }
+        }
       }
 
       .portfolio-image {
         width: 100%;
-      }
-
-      .portfolio-item-content {
-        color: $color-milk;
-        padding: 0 20px;
-        position: absolute;
-        top: 50%;
-        left: 0;
-        transform: translateY(-50%);
-
-        h3 {
-          padding: 0 0 10px;
-          margin: 0;
-        }
-
-        .dev-icons {
-          padding: 0 0 8px;
-
-          i {
-            padding: 0 4px;
-          }
-        }
       }
     }
   }

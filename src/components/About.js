@@ -26,11 +26,11 @@ class About extends Component {
                 I have educational knowledge ranging from design to Back-End technologies - but I specialize in Front-End Development.
               </p>
               <p className="text-block">
-                Ever since I was a kid I had a love for puzzles and building things. I'd even take things apart to see how they were
+                Ever since I was a kid I've had a love for puzzles and building. I'd even take things apart to see how they were
                 put together, though, more often than not they didn't go back the way they came.
-                Ultimately this led me to development where I get to enjoy the best of both worlds.
-                When I'm not coding you'll likely find me spending time with my family, reading or watching tutorials and documentation,
-                playing Battlefield or Sudoku, or learning about the latest tech in the field.
+                Ultimately, this led me to development where I get to enjoy the best of both worlds.
+                When I'm not coding you'll likely find me spending time with family, reading documentation, watching tutorials,
+                playing Battlefield or Sudoku, or learning about the latest and greatest in technology.
               </p>
 				 		</div>
             <div className="col-xs-12 col-sm-5 col-lg-4 education">

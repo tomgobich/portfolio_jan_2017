@@ -22,8 +22,8 @@ class Portfolio extends Component {
               <h2 className="text-center">Portfolio</h2>
               <div className="header-underscore center"></div>
 				 		</div>
-            <PortfolioItem />
-            
+            <PortfolioItem idName="item1" />
+            <PortfolioItem idName="item2" />
 			 		</div>
 		 		</div>
 			</div>
