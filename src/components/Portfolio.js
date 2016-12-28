@@ -6,7 +6,7 @@ import PortfolioContent from '../assets/portfolio-content.json';
 class Portfolio extends Component {
   render() {
 		return (
-			<div className="portfolio">
+			<div id="portfolio" className="portfolio">
 				<div className="container-fluid full-height">
 					<div className="row full-height">
 				 		<div className="col-xs-12">

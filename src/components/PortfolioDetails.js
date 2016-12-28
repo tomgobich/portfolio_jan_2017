@@ -33,7 +33,7 @@ class App extends Component {
 
               <div className="col-xs-12 col-sm-6 col-sm-push-6 col-md-5 col-md-push-7 col-lg-4 col-lg-push-7 details">
                 <div className="detail-section">
-                  <h4>About</h4>
+                  <h3>About</h3>
                   <div className="header-underscore"></div>
                   <p className="text-block">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -48,7 +48,7 @@ class App extends Component {
                   </p>
                 </div>
                 <div className="detail-section">
-                  <h4>Technologies</h4>
+                  <h3>Technologies</h3>
                   <div className="header-underscore"></div>
                   <ul>
                     <li>HTML5</li>
@@ -61,7 +61,7 @@ class App extends Component {
                   </ul>
                 </div>
                 <div className="detail-section">
-                  <h4>Main Involvement</h4>
+                  <h3>Main Involvement</h3>
                   <div className="header-underscore"></div>
                   <ul>
                     <li>Administrator Panel</li>
@@ -74,7 +74,7 @@ class App extends Component {
               </div>
 
               <div className="col-xs-12 col-sm-6 col-sm-pull-6 col-md-7 col-md-pull-5 col-lg-6 col-lg-pull-4 col-lg-offset-1">
-                <img className="image-onehundred" src="http://placehold.it/600x600" />
+                <img className="image-onehundred" src="http://placehold.it/600x600" alt="Title Goes Here" />
               </div>
 
             </div>

@@ -10,6 +10,8 @@
     margin-bottom: 40px;
 
     .portfolio-title {
+      font-size: 3em;
+      text-transform: uppercase;
       color: $color-milk;
       margin: 0;
     }
@@ -31,6 +33,10 @@
 
     .detail-section {
       padding-bottom: 40px;
+
+      h3 {
+        margin: 0;
+      }
 
       ul {
         list-style: none;

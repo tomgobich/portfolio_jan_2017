@@ -14,7 +14,7 @@ class About extends Component {
 
   render() {
 		return (
-			<div className="about">
+			<div id="about" className="about">
 				<div className="container-fluid full-height">
 					<div className="row full-height">
 				 		<div className="col-xs-12 col-sm-7 col-lg-6 col-lg-offset-1 about-me">
