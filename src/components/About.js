@@ -35,7 +35,9 @@ class About extends Component {
 				 		</div>
             <div className="col-xs-12 col-sm-5 col-lg-4 education">
               <h2>Education</h2>
-              <div id="educationHeaderUnderscore" className="header-underscore right"></div>
+              <div className="right-align-underscore">
+                <div id="educationHeaderUnderscore" className="header-underscore right"></div>
+              </div>
               <div className="education-wrapper">
                 <div className="content tiy">
                   <h4>The Iron Yard Cincinnati</h4>

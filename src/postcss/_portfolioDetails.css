@@ -1,10 +1,54 @@
 
 .portfolio-item-details {
-  width: 100%;
-  background-color: $color-green;
-  padding: 40px 0;
 
-  .portfolio-title {
-    margin: 0;
+  .title-bar {
+    width: 100%;
+    background-color: $color-green;
+    background: linear-gradient(15deg, rgba(55, 188, 155, 0.98), rgba(93, 156, 236, 0.8));
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-bottom: 40px;
+
+    .portfolio-title {
+      color: $color-milk;
+      margin: 0;
+    }
+
+    .cta-wrapper {
+      float: right;
+
+      .btn {
+        margin-right: 10px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  .details {
+
+    .detail-section {
+      padding-bottom: 40px;
+
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio-item-details {
+
+    .title-bar {
+
+      .cta-wrapper {
+        padding-top: 20px;
+        float: left;
+      }
+    }
   }
 }
