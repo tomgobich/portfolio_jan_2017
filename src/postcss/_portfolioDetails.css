@@ -1,0 +1,10 @@
+
+.portfolio-item-details {
+  width: 100%;
+  background-color: $color-green;
+  padding: 40px 0;
+
+  .portfolio-title {
+    margin: 0;
+  }
+}

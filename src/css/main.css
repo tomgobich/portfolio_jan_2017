@@ -421,3 +421,11 @@ button {
 .portfolio .portfolio-item .portfolio-item-wrapper .portfolio-image {
   width: 100%;
 }
+.portfolio-item-details {
+  width: 100%;
+  background-color: #37BC9B;
+  padding: 40px 0;
+}
+.portfolio-item-details .portfolio-title {
+  margin: 0;
+}
