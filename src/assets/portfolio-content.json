@@ -1,17 +1,51 @@
 {
-	"portfolioItems": [{
-		"title": "Testing",
-		"devicons": [
-			"devicon-html5-plain-wordmark",
-			"devicon-css3-plain-wordmark",
-			"devicon-sass-original",
-			"devicon-bootstrap-plain-wordmark",
-			"devicon-javascript-plain",
-			"devicon-angularjs-plain",
-			"devicon-nodejs-plain",
-			"devicon-mongodb-plain-wordmark"
-		],
-		"featuredBio": "This is a little bit about the application and it's general purpose.",
-		"featuredImage": "fsqlive-landingpage.png"
-	}]
+	"portfolioItems": [
+    {
+      "id": "fsq-live",
+  		"title": "FSQ Live",
+  		"devicons": [
+  			"devicon-html5-plain-wordmark",
+  			"devicon-sass-original",
+  			"devicon-angularjs-plain",
+  			"devicon-nodejs-plain",
+  			"devicon-mongodb-plain-wordmark"
+  		],
+  		"featuredBio": "A group project built in conjunction with The Iron Yard and 3CDC in an effort to add interativity to Cincinnati's New Years Eve Blast",
+  		"featuredImage": "fsqlive-landingpage.png",
+      "fullBio": "",
+      "fullImages": ""
+  	},
+    {
+      "id": "weather-app",
+      "title": "Weather",
+  		"devicons": [
+  			"devicon-html5-plain-wordmark",
+  			"devicon-sass-original",
+  			"devicon-bootstrap-plain-wordmark",
+  			"devicon-javascript-plain"
+  		],
+  		"featuredBio": "Enter your location to get a beautiful 7-day forecast listing including the day's condition, high temperature, and low temperature",
+  		"featuredImage": "weather.png",
+      "fullBio": "",
+      "fullImages": ""
+    },
+    {
+      "id": "devicons-holder",
+      "title": "All Devicons",
+  		"devicons": [
+  			"devicon-html5-plain-wordmark",
+  			"devicon-css3-plain-wordmark",
+  			"devicon-sass-original",
+  			"devicon-bootstrap-plain-wordmark",
+  			"devicon-javascript-plain",
+  			"devicon-angularjs-plain",
+  			"devicon-nodejs-plain",
+  			"devicon-mongodb-plain-wordmark"
+  		],
+  		"featuredBio": "This is a temporary listing to store the devicons for me! :D",
+  		"featuredImage": "fsqlive-landingpage.png",
+      "fullBio": "",
+      "fullImages": ""
+    }
+  ]
 }

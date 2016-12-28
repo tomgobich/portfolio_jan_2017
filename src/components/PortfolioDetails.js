@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
+import PortfolioContent from '../assets/portfolio-content.json';
 
 class App extends Component {
 
 	render() {
 
+    let portfolioID = this.props.params.portfolioID,
+        portfolioItem = PortfolioContent.portfolioItems.filter(item => item.id === portfolioID ),
+        details = portfolioItem[0];
+
 		return (
 			<div>
-				<h1>This is a page for a single portfolio item details</h1>
+				{details.title}
 			</div>
 		);
 	}
