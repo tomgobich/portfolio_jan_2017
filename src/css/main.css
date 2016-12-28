@@ -363,7 +363,6 @@ button {
 .portfolio .portfolio-item {
   margin-bottom: 40px;
 }
-.portfolio .portfolio-item:hover {}
 .portfolio .portfolio-item .portfolio-item-wrapper {
   width: 100%;
   height: 100%;
@@ -414,6 +413,9 @@ button {
 }
 .portfolio .portfolio-item .portfolio-item-wrapper .portfolio-item-overlay .portfolio-item-content .portfolio-item-content-center .dev-icons i {
   padding: 0 4px;
+}
+.portfolio .portfolio-item .portfolio-item-wrapper .portfolio-item-overlay .portfolio-item-content .portfolio-item-content-center .dev-icons i:first-child {
+  padding-left: 0;
 }
 .portfolio .portfolio-item .portfolio-item-wrapper .portfolio-image {
   width: 100%;

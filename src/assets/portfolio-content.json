@@ -1,0 +1,17 @@
+{
+	"portfolioItems": [{
+		"title": "Testing",
+		"devicons": [
+			"devicon-html5-plain-wordmark",
+			"devicon-css3-plain-wordmark",
+			"devicon-sass-original",
+			"devicon-bootstrap-plain-wordmark",
+			"devicon-javascript-plain",
+			"devicon-angularjs-plain",
+			"devicon-nodejs-plain",
+			"devicon-mongodb-plain-wordmark"
+		],
+		"featuredBio": "This is a little bit about the application and it's general purpose.",
+		"featuredImage": "fsqlive-landingpage.png"
+	}]
+}

@@ -31,26 +31,20 @@ class PortfolioItem extends Component {
 		return (
 			<div className="col-xs-12 col-sm-6 col-lg-4 portfolio-item">
         <div className="portfolio-item-wrapper" onMouseEnter={this.addAnimation} onMouseLeave={this.removeAnimation}>
-          <img className="portfolio-image" src="http://placehold.it/400x275" />
+          <img className="portfolio-image" src={'../images/' + this.props.data.featuredImage} />
           <div id={this.props.idName} className="portfolio-item-overlay animated">
             <div className="portfolio-item-content animated">
               <div className="portfolio-item-content-center">
-                <h3>Work Example Title</h3>
+                <h3>{this.props.data.title}</h3>
                 <div className="header-underscore white"></div>
                 <div className="dev-icons">
-                  <i className="devicon-html5-plain-wordmark"></i>      {/* HTML5 */}
-                  <i className="devicon-css3-plain-wordmark"></i>       {/* CSS3 */}
-                  <i className="devicon-sass-original"></i>             {/* SASS */}
-                  <i className="devicon-bootstrap-plain-wordmark"></i>  {/* Bootstrap */}
-                  <i className="devicon-javascript-plain"></i>          {/* JavaScript */}
-                  <i className="devicon-angularjs-plain"></i>           {/* AngularJS */}
-                  <i className="devicon-nodejs-plain"></i>              {/* NodeJS */}
-                  <i className="devicon-mongodb-plain-wordmark"></i>    {/* MongoDB */}
+                  {
+                    this.props.data.devicons.map((icon, index) => {
+                      return <i key={index} className={icon}></i>
+                    })
+                  }
                 </div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation.
-                </p>
+                <p>{this.props.data.featuredBio}</p>
               </div>
             </div>
             <div className="portfolio-item-overlay-gradient animated"></div>

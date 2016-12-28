@@ -1,18 +1,9 @@
 import React, { Component } from 'react';
 import PortfolioItem from './PortfolioItem';
+import PortfolioContent from '../assets/portfolio-content.json';
 
 
 class Portfolio extends Component {
-
-	// constructor(props) {
-	// 	super(props);
-  //
-	// 	// Initial state
-	// 	this.state = {
-  //
-	// 	};
-	// }
-
   render() {
 		return (
 			<div className="portfolio">
@@ -22,8 +13,11 @@ class Portfolio extends Component {
               <h2 className="text-center">Portfolio</h2>
               <div className="header-underscore center"></div>
 				 		</div>
-            <PortfolioItem idName="item1" />
-            <PortfolioItem idName="item2" />
+            {
+              PortfolioContent.portfolioItems.map((item, index) => {
+                return <PortfolioItem idName={'item' + index} key={index} data={item} />
+              })
+            }
 			 		</div>
 		 		</div>
 			</div>
