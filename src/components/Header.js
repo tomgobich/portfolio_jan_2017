@@ -47,10 +47,10 @@ class Header extends Component {
     						<div className="row nav-large">
     							<div className="col-md-9">
     								<nav id="menu" className="navigation">
-    									<Link className="home" data-anchor="home" to="/"><li>Home</li></Link>
-    									<Link className="about" data-anchor="about" to="/#about"><li>About</li></Link>
-    									<Link className="portfolio" data-anchor="portfolio" to="/#portfolio"><li>Portfolio</li></Link>
-    									<Link className="contact" data-anchor="contact" to="/#contact"><li>Contact</li></Link>
+    									<Link className="home" data-anchor="home" activeClassName="active" to="/"><li>Home</li></Link>
+    									<Link className="about" data-anchor="about" activeClassName="active" to="/#about"><li>About</li></Link>
+    									<Link className="portfolio" data-anchor="portfolio" activeClassName="active" to="/#portfolio"><li>Portfolio</li></Link>
+    									<Link className="contact" data-anchor="contact" activeClassName="active" to="/#contact"><li>Contact</li></Link>
     									<div className="h-rule"></div>
     								</nav>
     							</div>

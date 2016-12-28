@@ -8,10 +8,6 @@
     margin: 0;
   }
 
-  .about-me {
-
-  }
-
   .education {
     text-align: right;
 
@@ -52,6 +48,37 @@
           font-style: italic;
           font-weight: 200;
           padding: 0;
+        }
+      }
+    }
+  }
+
+  .skills {
+    padding-top: 40px;
+
+    .skills-list {
+      overflow-wrap: break-word;
+
+      .skill {
+        display: inline-block;
+        font-size: 3em;
+        line-height: 0em;
+        padding: 8px;
+        margin: 8px 8px 8px 0;
+
+        &.strong {
+          color: red;
+          background-color: rgba(255, 0, 0, 0.06);
+        }
+
+        &.medium {
+          color: green;
+          background-color: rgba(0, 255, 0, 0.06);
+        }
+
+        &.learning {
+          color: blue;
+          background-color: rgba(0, 0, 255, 0.06);
         }
       }
     }

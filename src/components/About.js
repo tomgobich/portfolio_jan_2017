@@ -15,10 +15,10 @@ class About extends Component {
   render() {
 		return (
 			<div id="about" className="about">
-				<div className="container-fluid full-height">
-					<div className="row full-height">
+				<div className="container-fluid">
+					<div className="row">
 				 		<div className="col-xs-12 col-sm-7 col-lg-6 col-lg-offset-1 about-me">
-              <h2>About Me</h2>
+              <h2>About</h2>
               <div className="header-underscore"></div>
               <p className="text-block">
                 Hey there, nice to meet you! My name is Tom Gobich, I'm a Front-End Developer and a graduate from The Iron Yard Cincinnati.
@@ -57,6 +57,28 @@ class About extends Component {
               </div>
 				 		</div>
 			 		</div>
+          <div className="row">
+            <div className="col-xs-12 col-lg-10 col-lg-offset-1 skills">
+              <h2>Skills</h2>
+              <div className="header-underscore"></div>
+              <div className="skills-list">
+              <div className="skill strong"><i className="devicon-html5-plain-wordmark"></i></div>
+              <div className="skill strong"><i className="devicon-css3-plain-wordmark"></i></div>
+              <div className="skill strong"><i className="devicon-sass-original"></i></div>
+              <div className="skill strong"><i className="devicon-bootstrap-plain-wordmark"></i></div>
+              <div className="skill strong"><i className="devicon-javascript-plain"></i></div>
+              <div className="skill strong"><i className="devicon-angularjs-plain"></i></div>
+              <div className="skill strong"><i className="devicon-mysql-plain-wordmark"></i></div>
+              <div className="skill strong"><i className="devicon-gulp-plain"></i></div>
+              <div className="skill strong"><i className="devicon-git-plain-wordmark"></i></div>
+              <div className="skill strong"><i className="devicon-trello-plain-wordmark"></i></div>
+              <div className="skill strong"><i className="devicon-photoshop-plain"></i></div>
+              <div className="skill medium"><i className="devicon-react-original-wordmark"></i></div>
+              <div className="skill medium"><i className="devicon-nodejs-plain"></i></div>
+              <div className="skill medium"><i className="devicon-mongodb-plain-wordmark"></i></div>
+              </div>
+            </div>
+          </div>
 		 		</div>
 			</div>
 		);
