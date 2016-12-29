@@ -9,7 +9,7 @@ class Portfolio extends Component {
 			<div id="portfolio" className="portfolio">
 				<div className="container-fluid full-height">
 					<div className="row full-height">
-				 		<div className="col-xs-12">
+				 		<div className="col-xs-12 portfolio-section-title">
               <h2 className="text-center">Portfolio</h2>
               <div className="header-underscore center"></div>
 				 		</div>

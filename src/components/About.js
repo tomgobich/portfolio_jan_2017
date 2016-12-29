@@ -1,30 +1,7 @@
 import React, { Component } from 'react';
-import $ from 'jquery';
 
 
 class About extends Component {
-
-	// constructor(props) {
-	// 	super(props);
-  //
-	// 	// Initial state
-	// 	this.state = {
-  //
-	// 	};
-	// }
-
-
-  addAnimation(element) {
-    // $(element).removeClass('animated fadeOutUp')
-    // $(element).addClass('animated fadeInDown')
-  }
-
-  removeAnimation(element) {
-    // $(element).removeClass('animated fadeInDown')
-    // $(element).addClass('animated fadeOutUp')
-  }
-
-
   render() {
 		return (
 			<div id="about" className="about">
