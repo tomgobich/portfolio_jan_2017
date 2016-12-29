@@ -31,7 +31,7 @@ class PortfolioItem extends Component {
   render() {
 		return (
 			<div className="col-xs-12 col-sm-6 col-lg-4 portfolio-item">
-        <Link to={`portfolio/${this.props.data.id}`}>
+        <Link to={`/portfolio/${this.props.data.id}`}>
           <div className="portfolio-item-wrapper" onMouseEnter={this.addAnimation} onMouseLeave={this.removeAnimation}>
             <img className="portfolio-image" src={'images/' + this.props.data.featuredImage} alt={this.props.data.title} />
             <div id={this.props.idName} className="portfolio-item-overlay animated">
