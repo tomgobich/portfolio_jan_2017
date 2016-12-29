@@ -62,8 +62,8 @@
       ]
     },
     {
-      "id": "devicons-holder",
-      "title": "All Devicons",
+      "id": "shopular",
+      "title": "Shopular Admin Panel",
       "linkLive": "",
       "linkGitHub": "",
   		"devicons": [
@@ -72,29 +72,27 @@
   			"devicon-sass-original",
   			"devicon-bootstrap-plain-wordmark",
   			"devicon-javascript-plain",
-  			"devicon-angularjs-plain",
-  			"devicon-nodejs-plain",
-  			"devicon-mongodb-plain-wordmark"
+  			"devicon-angularjs-plain"
   		],
-  		"featuredBio": "This is a temporary listing to store the devicons for me! :D",
-  		"featuredImage": "fsqlive-landingpage.png",
+  		"featuredBio": "This is temporary text to be replaced with the full content.",
+  		"featuredImage": "shopular.png",
       "fullBio": [],
       "fullImages": []
     },
     {
-      "id": "fsq-live",
-  		"title": "FSQ Live",
+      "id": "todoosy",
+  		"title": "ToDoosy To-Do Application",
       "linkLive": "",
       "linkGitHub": "",
   		"devicons": [
   			"devicon-html5-plain-wordmark",
   			"devicon-sass-original",
-  			"devicon-angularjs-plain",
-  			"devicon-nodejs-plain",
-  			"devicon-mongodb-plain-wordmark"
+        "devicon-bootstrap-plain-wordmark",
+  			"devicon-javascript-plain",
+  			"devicon-angularjs-plain"
   		],
-  		"featuredBio": "A group project built in conjunction with The Iron Yard and 3CDC in an effort to add interativity to Cincinnati's New Years Eve Blast",
-  		"featuredImage": "fsqlive-landingpage.png",
+  		"featuredBio": "This is temporary text to be replaced with the full content.",
+  		"featuredImage": "todoosy.png",
       "fullBio": [
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
@@ -104,25 +102,14 @@
         "CSS3 / SCSS",
         "JavaScript",
         "jQuery",
-        "AngularJS 1.x",
-        "NodeJS / Express",
-        "MongoDB / Mongoose"
+        "AngularJS 1.x"
       ],
-      "involvement": [
-        "Administrator Panel",
-        "Billboard Poll View",
-        "NodeJS Integration",
-        "Login functionality with Satellizer",
-        "MongoDB Integration"
-      ],
-      "fullImages": [
-        "fsqlive-landingpage.png",
-        "instagram.png"
-      ]
+      "involvement": [],
+      "fullImages": []
   	},
     {
-      "id": "weather-app",
-      "title": "Weather",
+      "id": "treetees",
+      "title": "TreeTees T-Shirt Shop",
       "linkLive": "",
       "linkGitHub": "",
   		"devicons": [
@@ -131,8 +118,8 @@
   			"devicon-bootstrap-plain-wordmark",
   			"devicon-javascript-plain"
   		],
-  		"featuredBio": "Enter your location to get a beautiful 7-day forecast listing including the day's condition, high temperature, and low temperature",
-  		"featuredImage": "weather.png",
+  		"featuredBio": "This is temporary text to be replaced with the full content.",
+  		"featuredImage": "treetees.png",
       "fullBio": [
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
@@ -158,7 +145,7 @@
   			"devicon-mongodb-plain-wordmark"
   		],
   		"featuredBio": "This is a temporary listing to store the devicons for me! :D",
-  		"featuredImage": "fsqlive-landingpage.png",
+  		"featuredImage": "instagram.png",
       "fullBio": [],
       "fullImages": []
     }
