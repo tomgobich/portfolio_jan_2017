@@ -357,7 +357,8 @@ button {
   overflow: hidden;
   z-index: 10;
   transition: max-height 600ms ease,
-                    opacity 1.2s ease;
+                    opacity 1.2s ease,
+                    margin 600ms ease;
 }
 .about .education .education-wrapper .education-dropdown h5 {
   padding-right: 10px;
@@ -379,6 +380,7 @@ button {
   visibility: visible;
   max-height: 500px;
   opacity: 1;
+  margin-bottom: 20px;
 }
 .about .skills {
   text-align: center;
