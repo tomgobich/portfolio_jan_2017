@@ -3,12 +3,61 @@ import Header from './Header.js';
 import AnimatedButton from './AnimatedButton';
 import PortfolioContent from '../assets/portfolio-content.json';
 
-class App extends Component {
+class PortfolioDetails extends Component {
+
+  renderAbout(details) {
+    if(details.hasOwnProperty('fullBio'))
+    {
+      return (
+        <div className="detail-section">
+          <h3>About</h3>
+          <div className="header-underscore"></div>
+          {
+            details.fullBio.map(bio => <p key={bio} className="text-block">{bio}</p>)
+          }
+        </div>
+      )
+    }
+  }
+
+  renderTechnologies(details) {
+    if(details.hasOwnProperty('technologies'))
+    {
+      return (
+        <div className="detail-section">
+          <h3>Technologies</h3>
+          <div className="header-underscore"></div>
+          <ul>
+            {
+              details.technologies.map(tech => <li key={tech}>{tech}</li>)
+            }
+          </ul>
+        </div>
+      )
+    }
+  }
+
+  renderInvolvement(details) {
+    if(details.hasOwnProperty('involvement'))
+    {
+      return (
+        <div className="detail-section">
+          <h3>Main Involvement</h3>
+          <div className="header-underscore"></div>
+          <ul>
+            {
+              details.involvement.map(involvement => <li key={involvement}>{involvement}</li>)
+            }
+          </ul>
+        </div>
+      )
+    }
+  }
 
 	render() {
 
     let portfolioID = this.props.params.portfolioID,
-        portfolioItem = PortfolioContent.portfolioItems.filter(item => item.id === portfolioID ),
+        portfolioItem = PortfolioContent.portfolioItems.filter(item => item.id === portfolioID),
         details = portfolioItem[0];
 
 		return (
@@ -32,49 +81,16 @@ class App extends Component {
             <div className="row">
 
               <div className="col-xs-12 col-sm-6 col-sm-push-6 col-md-5 col-md-push-7 col-lg-4 col-lg-push-7 details">
-                <div className="detail-section">
-                  <h3>About</h3>
-                  <div className="header-underscore"></div>
-                  <p className="text-block">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                  </p>
-                  <p className="text-block">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                  </p>
-                </div>
-                <div className="detail-section">
-                  <h3>Technologies</h3>
-                  <div className="header-underscore"></div>
-                  <ul>
-                    <li>HTML5</li>
-                    <li>CSS3 / SCSS</li>
-                    <li>JavaScript</li>
-                    <li>jQuery</li>
-                    <li>AngularJS 1.x</li>
-                    <li>NodeJS / Express</li>
-                    <li>MongoDB / Mongoose</li>
-                  </ul>
-                </div>
-                <div className="detail-section">
-                  <h3>Main Involvement</h3>
-                  <div className="header-underscore"></div>
-                  <ul>
-                    <li>Administrator Panel</li>
-                    <li>Billboard Poll View</li>
-                    <li>NodeJS Integration</li>
-                    <li>Login functionality with Satellizer</li>
-                    <li>MongoDB Integration</li>
-                  </ul>
-                </div>
+                {this.renderAbout(details)}
+                {this.renderTechnologies(details)}
+                {this.renderInvolvement(details)}
               </div>
 
               <div className="col-xs-12 col-sm-6 col-sm-pull-6 col-md-7 col-md-pull-5 col-lg-6 col-lg-pull-4 col-lg-offset-1">
-                <img className="image-onehundred" src="http://placehold.it/600x600" alt="Title Goes Here" />
+                {
+                  details.fullImages.map(image => <img key={image} className="image-onehundred portfolio-image" src={'../../images/' + image} alt={details.title} />)
+                }
+                <p>Placeholder images</p>
               </div>
 
             </div>
@@ -85,4 +101,4 @@ class App extends Component {
 	}
 }
 
-export default App;
+export default PortfolioDetails;

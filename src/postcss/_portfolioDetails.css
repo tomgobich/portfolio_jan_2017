@@ -29,6 +29,10 @@
     }
   }
 
+  .portfolio-image {
+    padding-bottom: 40px;
+  }
+
   .details {
 
     .detail-section {

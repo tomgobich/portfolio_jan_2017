@@ -433,13 +433,13 @@ button {
 }
 .portfolio .portfolio-item {
   margin-bottom: 40px;
-  cursor: pointer;
 }
 .portfolio .portfolio-item .portfolio-item-wrapper {
   width: 100%;
   height: 100%;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 .portfolio .portfolio-item .portfolio-item-wrapper .portfolio-item-overlay {
   width: 100%;
@@ -514,6 +514,9 @@ button {
 }
 .portfolio-item-details .title-bar .cta-wrapper .btn:last-child {
   margin-right: 0;
+}
+.portfolio-item-details .portfolio-image {
+  padding-bottom: 40px;
 }
 .portfolio-item-details .details .detail-section {
   padding-bottom: 40px;
