@@ -24,6 +24,8 @@
         width: 100%;
         padding: 4px 10px 4px 0;
         margin-bottom: 8px;
+        position: relative;
+        z-index: 20;
 
         &.tiy {
           border-right: 2px solid $color-tiy;
@@ -49,6 +51,49 @@
           font-weight: 200;
           padding: 0;
         }
+      }
+
+      .education-dropdown {
+        width: 100%;
+        max-height: 0px;
+        font-weight: 200;
+        position: relative;
+        top: 0;
+        right: 0;
+        visibility: none;
+        opacity: 0;
+        overflow: hidden;
+        z-index: 10;
+        transition: max-height 600ms ease,
+                    opacity 1.2s ease;
+
+        h5 {
+          padding-right: 10px;
+        }
+
+        ul {
+          list-style: none;
+          padding: 0 14px 0 0;
+          margin-right: 10px;
+
+          li {
+
+            &:after {
+              content: '-';
+              position: absolute;
+              right: 10px;
+            }
+          }
+        }
+      }
+
+      .content.tiy:hover ~ .education-dropdown.tiy,
+      .content.cstate1:hover ~ .education-dropdown.cstate1,
+      .content.cstate2:hover ~ .education-dropdown.cstate2,
+      .education-dropdown:hover {
+        visibility: visible;
+        max-height: 500px;
+        opacity: 1;
       }
     }
   }

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import $ from 'jquery';
 
 
 class About extends Component {
@@ -11,6 +12,18 @@ class About extends Component {
   //
 	// 	};
 	// }
+
+
+  addAnimation(element) {
+    // $(element).removeClass('animated fadeOutUp')
+    // $(element).addClass('animated fadeInDown')
+  }
+
+  removeAnimation(element) {
+    // $(element).removeClass('animated fadeInDown')
+    // $(element).addClass('animated fadeOutUp')
+  }
+
 
   render() {
 		return (
@@ -39,20 +52,65 @@ class About extends Component {
                 <div id="educationHeaderUnderscore" className="header-underscore right"></div>
               </div>
               <div className="education-wrapper">
-                <div className="content tiy">
+                <div id="contentTIY"
+                     className="content tiy"
+                     onMouseEnter={(e) => { this.addAnimation('#dropdownTIY') }}
+                     onMouseLeave={(e) => { this.removeAnimation('#dropdownTIY') }}>
                   <h4>The Iron Yard Cincinnati</h4>
                   <h5>Front-End Engineering with JavaScript and MVC Frameworks</h5>
-                  <p>Graduated Fall 2016</p>
+                  <p>12 Technologies Covered, Graduated Fall 2016</p>
                 </div>
-                <div className="content cstate">
+                <div id="dropdownTIY" className="education-dropdown tiy">
+                  <h5>Technologies Covered:</h5>
+                  <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>SCSS</li>
+                    <li>JavaScript</li>
+                    <li>jQuery</li>
+                    <li>AngularJS 1.x</li>
+                    <li>ReactJS</li>
+                    <li>NodeJS</li>
+                    <li>MongoDB</li>
+                    <li>Gulp</li>
+                    <li>GIT</li>
+                    <li>Trello</li>
+                  </ul>
+                </div>
+                <div className="content cstate cstate1">
                   <h4>Cincinnati State</h4>
                   <h5>Computer Programming and Systems Analysis</h5>
-                  <p>_ Courses Completed, 2014 - 2016</p>
+                  <p>7 Relevant Courses Completed, 2014 - 2016</p>
                 </div>
-                <div className="content cstate">
+                <div id="dropdownCState1" className="education-dropdown cstate1">
+                  <h5>Relevant Coursework:</h5>
+                  <ul>
+                    <li>Database Design and SQL</li>
+                    <li>Visual Basic .NET</li>
+                    <li>Business Systems Analysis</li>
+                    <li>PHP and MySQL</li>
+                    <li>Java Programming</li>
+                    <li>ASP.NET C# WEb Development</li>
+                    <li>C Programming</li>
+                  </ul>
+                </div>
+                <div className="content cstate cstate2">
                   <h4>Cincinnati State</h4>
                   <h5>Web and Multimedia Design</h5>
-                  <p>_ Courses Completed, 2012 - 2014</p>
+                  <p>8 Relevant Courses Completed, 2012 - 2014</p>
+                </div>
+                <div id="dropdownCState2" className="education-dropdown cstate2">
+                  <h5>Relevant Coursework:</h5>
+                  <ul>
+                    <li>Design Drawing</li>
+                    <li>Design Principals</li>
+                    <li>Beginning 2D Graphics</li>
+                    <li>Digital Media Concepts</li>
+                    <li>Web Development with HTML</li>
+                    <li>Web Development with CSS</li>
+                    <li>Animated Web Content</li>
+                    <li>User Experience Design and Usability</li>
+                  </ul>
                 </div>
               </div>
 				 		</div>

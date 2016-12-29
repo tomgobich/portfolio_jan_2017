@@ -322,6 +322,8 @@ button {
   width: 100%;
   padding: 4px 10px 4px 0;
   margin-bottom: 8px;
+  position: relative;
+  z-index: 20;
 }
 .about .education .education-wrapper .content.tiy {
   border-right: 2px solid rgb(42, 114, 159);
@@ -342,6 +344,41 @@ button {
   font-style: italic;
   font-weight: 200;
   padding: 0;
+}
+.about .education .education-wrapper .education-dropdown {
+  width: 100%;
+  max-height: 0px;
+  font-weight: 200;
+  position: relative;
+  top: 0;
+  right: 0;
+  visibility: none;
+  opacity: 0;
+  overflow: hidden;
+  z-index: 10;
+  transition: max-height 600ms ease,
+                    opacity 1.2s ease;
+}
+.about .education .education-wrapper .education-dropdown h5 {
+  padding-right: 10px;
+}
+.about .education .education-wrapper .education-dropdown ul {
+  list-style: none;
+  padding: 0 14px 0 0;
+  margin-right: 10px;
+}
+.about .education .education-wrapper .education-dropdown ul li:after {
+  content: '-';
+  position: absolute;
+  right: 10px;
+}
+.about .education .education-wrapper .content.tiy:hover ~ .education-dropdown.tiy,
+      .about .education .education-wrapper .content.cstate1:hover ~ .education-dropdown.cstate1,
+      .about .education .education-wrapper .content.cstate2:hover ~ .education-dropdown.cstate2,
+      .about .education .education-wrapper .education-dropdown:hover {
+  visibility: visible;
+  max-height: 500px;
+  opacity: 1;
 }
 .about .skills {
   text-align: center;
