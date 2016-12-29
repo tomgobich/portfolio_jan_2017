@@ -344,29 +344,29 @@ button {
   padding: 0;
 }
 .about .skills {
+  text-align: center;
   padding-top: 40px;
 }
 .about .skills .skills-list {
-  overflow-wrap: break-word;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  align-content: flex-end;
 }
 .about .skills .skills-list .skill {
   display: inline-block;
   font-size: 3em;
+  color: rgba(0, 0, 0, 0.4);
   line-height: 0em;
   padding: 8px;
   margin: 8px 8px 8px 0;
+  transition: color 600ms ease;
 }
-.about .skills .skills-list .skill.strong {
-  color: red;
-  background-color: rgba(255, 0, 0, 0.06);
-}
-.about .skills .skills-list .skill.medium {
-  color: green;
-  background-color: rgba(0, 255, 0, 0.06);
-}
-.about .skills .skills-list .skill.learning {
-  color: blue;
-  background-color: rgba(0, 0, 255, 0.06);
+.about .skills .skills-list .skill:hover {
+  color: rgba(0, 0, 0, 0.8);
 }
 @media screen and (max-width: 768px) {
   .about .education {

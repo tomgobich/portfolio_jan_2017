@@ -60,22 +60,22 @@ class About extends Component {
           <div className="row">
             <div className="col-xs-12 col-lg-10 col-lg-offset-1 skills">
               <h2>Skills</h2>
-              <div className="header-underscore"></div>
+              <div className="header-underscore center"></div>
               <div className="skills-list">
-              <div className="skill strong"><i className="devicon-html5-plain-wordmark"></i></div>
-              <div className="skill strong"><i className="devicon-css3-plain-wordmark"></i></div>
-              <div className="skill strong"><i className="devicon-sass-original"></i></div>
-              <div className="skill strong"><i className="devicon-bootstrap-plain-wordmark"></i></div>
-              <div className="skill strong"><i className="devicon-javascript-plain"></i></div>
-              <div className="skill strong"><i className="devicon-angularjs-plain"></i></div>
-              <div className="skill strong"><i className="devicon-mysql-plain-wordmark"></i></div>
-              <div className="skill strong"><i className="devicon-gulp-plain"></i></div>
-              <div className="skill strong"><i className="devicon-git-plain-wordmark"></i></div>
-              <div className="skill strong"><i className="devicon-trello-plain-wordmark"></i></div>
-              <div className="skill strong"><i className="devicon-photoshop-plain"></i></div>
-              <div className="skill medium"><i className="devicon-react-original-wordmark"></i></div>
-              <div className="skill medium"><i className="devicon-nodejs-plain"></i></div>
-              <div className="skill medium"><i className="devicon-mongodb-plain-wordmark"></i></div>
+              <div className="skill"><i className="devicon-html5-plain-wordmark"></i></div>
+              <div className="skill"><i className="devicon-css3-plain-wordmark"></i></div>
+              <div className="skill"><i className="devicon-sass-original"></i></div>
+              <div className="skill"><i className="devicon-bootstrap-plain-wordmark"></i></div>
+              <div className="skill"><i className="devicon-javascript-plain"></i></div>
+              <div className="skill"><i className="devicon-angularjs-plain"></i></div>
+              <div className="skill"><i className="devicon-mysql-plain-wordmark"></i></div>
+              <div className="skill"><i className="devicon-gulp-plain"></i></div>
+              <div className="skill"><i className="devicon-git-plain-wordmark"></i></div>
+              <div className="skill"><i className="devicon-trello-plain-wordmark"></i></div>
+              <div className="skill"><i className="devicon-photoshop-plain"></i></div>
+              <div className="skill"><i className="devicon-react-original-wordmark"></i></div>
+              <div className="skill"><i className="devicon-nodejs-plain"></i></div>
+              <div className="skill"><i className="devicon-mongodb-plain-wordmark"></i></div>
               </div>
             </div>
           </div>
