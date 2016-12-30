@@ -8,7 +8,7 @@ class Contact extends Component {
 			<div id="contact" className="contact">
 				<div className="container-fluid">
 					<div className="row">
-            <div className="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+            <div className="col-xs-12 col-md-10 col-md-offset-1">
               <h2>Contact</h2>
               <div className="header-underscore"></div>
               <ul className="contact-list">
