@@ -537,3 +537,8 @@ button {
     float: left;
   }
 }
+.contact {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 80px 0 70px;
+}

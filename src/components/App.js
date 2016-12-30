@@ -3,6 +3,7 @@ import Header from './Header';
 import Hero from './Hero';
 import About from './About';
 import Portfolio from './Portfolio';
+import Contact from './Contact';
 
 class App extends Component {
 
@@ -14,6 +15,7 @@ class App extends Component {
 				<Hero />
         <About />
         <Portfolio />
+        <Contact />
 			</div>
 		);
 	}
