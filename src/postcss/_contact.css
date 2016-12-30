@@ -4,6 +4,10 @@
   background-color: rgba(0, 0, 0, 0.1);
   padding: 80px 0 70px;
 
+  #thankYouResponse {
+    display: none;
+  }
+
   .contact-form {
 
     .control-label {
@@ -14,7 +18,28 @@
     .form-control {
       background-color: rgba(255, 255, 255, 0.2);
 
+      &.invalid {
+        border: 1px solid rgba(255, 0, 0, 0.6);
+      }
     }
+
+    .form-group {
+      position: relative;
+    }
+
+    .invalid-message {
+      color: rgba(255, 0, 0, 0.4);
+      position: absolute;
+      top: 0;
+      right: 0;
+      visibility: hidden;
+      transition: all 600ms ease;
+    }
+
+    #inputName .invalid ~ .invalid-message { visibility: visible; }
+    #inputEmail .invalid ~ .invalid-message { visibility: visible; }
+    #inputSubject .invalid ~ .invalid-message { visibility: visible; }
+    #inputMessage .invalid ~ .invalid-message { visibility: visible; }
 
     .button-group {
       float: right;

@@ -20,53 +20,75 @@ class Contact extends Component {
 		}
 	}
 
-  validateFields() {
-    let isValidName     = this.validateEntry(this.name.value)
-    let isValidEmail    = this.validateEmail(this.email.value)
-    let isValidSubject  = this.validateEntry(this.subject.value)
-    let isValidMessage  = this.validateEntry(this.message.value)
-
-    this.setState({ isValidName, isValidEmail, isValidSubject, isValidMessage})
-    this.updateClassLists(isValidName, isValidEmail, isValidSubject, isValidMessage);
-  }
-
-  updateClassLists(isValidName, isValidEmail, isValidSubject, isValidMessage) {
-    let nameClass = this.getClassState(isValidName)
-    let emailClass = this.getClassState(isValidEmail)
-    let subjectClass = this.getClassState(isValidSubject)
-    let messageClass = this.getClassState(isValidMessage)
-
-    this.setState({ nameClass, emailClass, subjectClass, messageClass })
-  }
-
-  getClassState(field) {
+  validateName(e) {
     const defaultClass = "form-control"
-    console.log(field)
-    return field ? defaultClass : defaultClass + " invalid"
+
+    let isValidName     = this.validateEntryString(this.name.value)
+    let nameClass       = isValidName ? defaultClass : defaultClass + " invalid"
+
+    this.setState({ nameClass, isValidName })
+  }
+
+  validateEmail(e) {
+    const defaultClass = "form-control"
+
+    let isValidEmail     = this.validateEmailString(this.email.value)
+    let emailClass       = isValidEmail ? defaultClass : defaultClass + " invalid"
+
+    this.setState({ emailClass, isValidEmail })
+  }
+
+  validateSubject(e) {
+    const defaultClass = "form-control"
+
+    let isValidSubject   = this.validateEntryString(this.subject.value)
+    let subjectClass     = isValidSubject ? defaultClass : defaultClass + " invalid"
+
+    this.setState({ subjectClass, isValidSubject })
+  }
+
+  validateMessage(e) {
+    const defaultClass = "form-control"
+
+    let isValidMessage   = this.validateEntryString(this.message.value)
+    let messageClass     = isValidMessage ? defaultClass : defaultClass + " invalid"
+
+    this.setState({ messageClass, isValidMessage })
   }
 
   submitEmail(e) {
     e.preventDefault()
 
-
+    if(this.state.isValidName && this.state.isValidEmail && this.state.isValidSubject && this.state.isValidMessage) {
+      this.submitForm()
+    }
   }
 
   // Validates input for some form of entry > length of 2
-  validateEntry(field) {
+  validateEntryString(field) {
     return field.length >= 3 ? true : false
   }
 
   // Validates input for email
-  validateEmail(field) {
+  validateEmailString(field) {
     return /(.+)@(.+){2,}\.(.+){2,}/.test(field) ? true : false;
   }
 
-  submitForm(data) {
-    $.ajax({
+  submitForm() {
+    let promise = $.ajax({
       url: "https://formspree.io/tom@tomgobich.com",
       method: "POST",
       data: $('#contactForm').serialize(),
       dataType: "json"
+    })
+
+    promise.done(response => {
+      $('#contactForm').hide()
+      $('#thankYouResponse').show()
+    })
+
+    promise.fail(() => {
+      alert('Something went wrong, please ensure all fields are properly filled out and try again.')
     })
   }
 
@@ -93,48 +115,59 @@ class Contact extends Component {
                   </a>
                 </li>
               </ul>
-              <form ref={(input) => this.contactForm = input} id="contactForm" className="contact-form" onChange={(e) => this.validateFields(e)} onSubmit={(e) => this.submitEmail(e)}>
+              <div id="thankYouResponse">
+                <h3>Thank you for your email! It will be celebrated over for 1-2 days before the favor is returned to you from me!</h3>
+              </div>
+              <form ref={(input) => this.contactForm = input} id="contactForm" className="contact-form" onSubmit={(e) => this.submitEmail(e)}>
                 <input type="hidden" name="_next" value="/thanks" />
                 <input type="text" name="_gotcha" style={hiddenStyle} />
                 <div className="row contact-content">
                   <div className="col-xs-12 col-md-6 email-me">
-                    <div className="form-group">
+                    <div id="inputName" className="form-group">
                       <label className="control-label">Name:</label>
                       <input ref={(input) => this.name = input}
+                             onChange={(e) => this.validateName(e)}
                              type="text"
                              className={this.state.nameClass}
                              name="name"
                              placeholder="Jon Snow"
                              required />
+                        <p className="invalid-message">Name isn't long enough</p>
                     </div>
-                    <div className="form-group">
+                    <div id="inputEmail" className="form-group">
                       <label className="control-label">Email:</label>
                       <input ref={(input) => this.email = input}
+                             onChange={(e) => this.validateEmail(e)}
                              type="email"
                              className={this.state.emailClass}
                              name="email"
                              placeholder="youknownothin@jonsnow.com"
                              required />
+                        <p className="invalid-message">Email is invalid</p>
                     </div>
-                    <div className="form-group">
+                    <div id="inputSubject" className="form-group">
                       <label className="control-label">Subject:</label>
                       <input ref={(input) => this.subject = input}
+                             onChange={(e) => this.validateSubject(e)}
                              type="text"
                              className={this.state.subjectClass}
                              name="_subject"
                              placeholder="You Know Nothin' Jon Snow"
                              required />
+                        <p className="invalid-message">Subject isn't long enough</p>
                     </div>
                   </div>
                   <div className="col-xs-12 col-md-6 email-me">
-                    <div className="form-group">
+                    <div id="inputMessage" className="form-group">
                       <label className="control-label">Message:</label>
                       <textarea ref={(input) => this.message = input}
+                                onChange={(e) => this.validateMessage(e)}
                                 rows="9"
                                 className={this.state.messageClass}
                                 name="message"
                                 placeholder="Ygritte: Is that a palace? Jon Snow: It's a windmill."
                                 required />
+                        <p className="invalid-message">Message isn't long enough</p>
                     </div>
                     <div className="button-group">
                       <AnimatedButton idName="btnContactSubmit" classList="btn btn-primary" text="Send Email" />
