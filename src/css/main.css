@@ -6,6 +6,20 @@ body {
   background-color: #f9f8fd;
   color: #333;
 }
+[class^=mif-] {
+  vertical-align: top;
+  transform: translateY(3px);
+  padding-right: 4px;
+}
+a {
+  color: #2E9E82;
+  text-decoration: none;
+  transition: color 600ms ease;
+}
+a:hover {
+  color: #37BC9B;
+  text-decoration: none;
+}
 h1,
 h2,
 h3,
@@ -541,4 +555,27 @@ button {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.1);
   padding: 80px 0 70px;
+}
+.contact .contact-form .control-label {
+  font-weight: 200;
+  font-size: 1em;
+}
+.contact .contact-form .form-control {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.contact .contact-form .button-group {
+  float: right;
+}
+.contact .contact-form .button-group .btn {
+  margin-top: 10px;
+}
+.contact .contact-list {
+  color: rgba(0, 0, 0, 0.75);
+  list-style: none;
+  padding: 20px 0;
+  display: block;
+}
+.contact .contact-list li {
+  padding-right: 40px;
+  display: inline-block;
 }

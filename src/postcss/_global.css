@@ -1,5 +1,6 @@
 $header-font: 'Titillium Web', sans-serif;
 $color-green: #37BC9B;
+$color-link: #2E9E82;
 $color-dark: #333;
 $color-gray: #3d3d3f;
 $color-milk: #f6f5f3;
@@ -16,6 +17,23 @@ body {
   padding-top: 51px;
   background-color: $color-white;
   color: $color-dark;
+}
+
+[class^=mif-] {
+  vertical-align: top;
+  transform: translateY(3px);
+  padding-right: 4px;
+}
+
+a {
+  color: $color-link;
+  text-decoration: none;
+  transition: color 600ms ease;
+
+  &:hover {
+    color: $color-green;
+    text-decoration: none;
+  }
 }
 
 h1,
