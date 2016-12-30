@@ -5,21 +5,60 @@ import AnimatedButton from './AnimatedButton';
 
 class Contact extends Component {
 
-  // constructor() {
-	// 	super();
-  //
-	// 	this.addFish = this.addFish.bind(this);
-	// 	this.loadSamples = this.loadSamples.bind(this);
-	// }
+  constructor() {
+		super();
 
-  createEmail(e) {
-    e.preventDefault();
-    this.validateEntry(this.name.value);
+    this.state = {
+      nameClass: "form-control",
+      emailClass: "form-control",
+      subjectClass: "form-control",
+      messageClass: "form-control",
+			isValidName: false,
+      isValidEmail: false,
+      isValidSubject: false,
+      isValidMessage: false
+		}
+	}
+
+  validateFields() {
+    let isValidName     = this.validateEntry(this.name.value)
+    let isValidEmail    = this.validateEmail(this.email.value)
+    let isValidSubject  = this.validateEntry(this.subject.value)
+    let isValidMessage  = this.validateEntry(this.message.value)
+
+    this.setState({ isValidName, isValidEmail, isValidSubject, isValidMessage})
+    this.updateClassLists(isValidName, isValidEmail, isValidSubject, isValidMessage);
+  }
+
+  updateClassLists(isValidName, isValidEmail, isValidSubject, isValidMessage) {
+    let nameClass = this.getClassState(isValidName)
+    let emailClass = this.getClassState(isValidEmail)
+    let subjectClass = this.getClassState(isValidSubject)
+    let messageClass = this.getClassState(isValidMessage)
+
+    this.setState({ nameClass, emailClass, subjectClass, messageClass })
+  }
+
+  getClassState(field) {
+    const defaultClass = "form-control"
+    console.log(field)
+    return field ? defaultClass : defaultClass + " invalid"
+  }
+
+  submitEmail(e) {
+    e.preventDefault()
+
+
   }
 
   // Validates input for some form of entry > length of 2
   validateEntry(field) {
+    return field.length >= 3 ? true : false
+  }
 
+  // Validates input for email
+  validateEmail(field) {
+    return /(.+)@(.+){2,}\.(.+){2,}/.test(field) ? true : false;
   }
 
   submitForm(data) {
@@ -28,7 +67,7 @@ class Contact extends Component {
       method: "POST",
       data: $('#contactForm').serialize(),
       dataType: "json"
-    });
+    })
   }
 
   render() {
@@ -54,7 +93,7 @@ class Contact extends Component {
                   </a>
                 </li>
               </ul>
-              <form ref={(input) => this.contactForm = input} id="contactForm" className="contact-form" onSubmit={(e) => this.createEmail(e)}>
+              <form ref={(input) => this.contactForm = input} id="contactForm" className="contact-form" onChange={(e) => this.validateFields(e)} onSubmit={(e) => this.submitEmail(e)}>
                 <input type="hidden" name="_next" value="/thanks" />
                 <input type="text" name="_gotcha" style={hiddenStyle} />
                 <div className="row contact-content">
@@ -63,33 +102,39 @@ class Contact extends Component {
                       <label className="control-label">Name:</label>
                       <input ref={(input) => this.name = input}
                              type="text"
-                             className="form-control"
+                             className={this.state.nameClass}
                              name="name"
-                             placeholder="Jon Snow" />
+                             placeholder="Jon Snow"
+                             required />
                     </div>
                     <div className="form-group">
                       <label className="control-label">Email:</label>
                       <input ref={(input) => this.email = input}
                              type="email"
-                             className="form-control"
+                             className={this.state.emailClass}
                              name="email"
-                             placeholder="youknownothin@jonsnow.com" />
+                             placeholder="youknownothin@jonsnow.com"
+                             required />
                     </div>
                     <div className="form-group">
                       <label className="control-label">Subject:</label>
                       <input ref={(input) => this.subject = input}
-                             type="text" className="form-control"
+                             type="text"
+                             className={this.state.subjectClass}
                              name="_subject"
-                             placeholder="You Know Nothin' Jon Snow" />
+                             placeholder="You Know Nothin' Jon Snow"
+                             required />
                     </div>
                   </div>
                   <div className="col-xs-12 col-md-6 email-me">
                     <div className="form-group">
                       <label className="control-label">Message:</label>
                       <textarea ref={(input) => this.message = input}
-                                rows="9" className="form-control"
-                                name="message" 
-                                placeholder="Ygritte: Is that a palace? Jon Snow: It's a windmill." />
+                                rows="9"
+                                className={this.state.messageClass}
+                                name="message"
+                                placeholder="Ygritte: Is that a palace? Jon Snow: It's a windmill."
+                                required />
                     </div>
                     <div className="button-group">
                       <AnimatedButton idName="btnContactSubmit" classList="btn btn-primary" text="Send Email" />
