@@ -4,6 +4,7 @@ import Hero from './Hero';
 import About from './About';
 import Portfolio from './Portfolio';
 import Contact from './Contact';
+import Footer from './Footer';
 
 class App extends Component {
 
@@ -16,6 +17,7 @@ class App extends Component {
         <About />
         <Portfolio />
         <Contact />
+        <Footer />
 			</div>
 		);
 	}

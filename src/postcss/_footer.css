@@ -1,0 +1,43 @@
+
+.footer {
+  width: 100%;
+  background-color: $color-dark;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 20px 0;
+
+  .site-links {
+
+    .site-navigation {
+      text-align: center;
+      list-style: none;
+      padding: 0;
+
+      li {
+        padding: 0 10px;
+        display: inline-block;
+      }
+    }
+  }
+
+  .social-links {
+
+    .social-networks {
+      text-align: right;
+      list-style: none;
+      padding: 0;
+
+      li {
+        padding: 0 10px;
+        display: inline-block;
+
+        img {
+          width: 25px;
+        }
+
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}
