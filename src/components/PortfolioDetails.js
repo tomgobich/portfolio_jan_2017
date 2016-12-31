@@ -93,7 +93,6 @@ class PortfolioDetails extends Component {
                 {
                   details.fullImages.map(image => <img key={image} className="image-onehundred portfolio-image" src={'../../images/' + image} alt={details.title} />)
                 }
-                <p>Placeholder images</p>
               </div>
 
             </div>
