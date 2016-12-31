@@ -14,6 +14,13 @@
     svg {
       height: 30px;
 
+      &:hover {
+
+        g {
+          fill: $color-green;
+        }
+      }
+
       g {
         fill: $color-white;
       }
@@ -34,7 +41,8 @@
       color: $color-milk;
       transition: color 300ms ease;
 
-      &:hover {
+      &:hover,
+      &.active {
         color: $color-green;
       }
 
@@ -68,6 +76,10 @@
       padding: 0 10px;
       float: right;
 
+      &:last-child {
+        padding-right: 0;
+      }
+
       img {
         width: 25px;
       }
@@ -80,7 +92,7 @@
       display: none;
       color: rgba(255, 255, 255, 0.6);
       font-size: 1.8em;
-      padding: 12px 0;
+      padding: 9px 0;
       float: right;
       cursor: pointer;
 

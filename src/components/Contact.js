@@ -97,7 +97,7 @@ class Contact extends Component {
     let hiddenStyle = { display: "none" }
 
 		return (
-			<div id="contact" className="contact">
+			<div id="contact" className="contact nav-section">
 				<div className="container-fluid">
 					<div className="row">
             <div className="col-xs-12 col-md-10 col-md-offset-1">

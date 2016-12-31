@@ -3,7 +3,7 @@
   width: 100%;
   background-color: $color-dark;
   color: rgba(255, 255, 255, 0.8);
-  padding: 20px 0;
+  padding: 40px 0 80px;
 
   .site-links {
 
@@ -37,6 +37,20 @@
         &:last-child {
           padding-right: 0;
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    text-align: center;
+
+    .social-links {
+      padding-top: 20px;
+
+      .social-networks {
+        text-align: center;
       }
     }
   }

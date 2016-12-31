@@ -1,10 +1,24 @@
 import React, { Component } from 'react';
+import $ from 'jquery';
 
 
 class About extends Component {
+
+  toggleVisibility(element) {
+    let $oldElement  = $('.dropdown-active')
+    let $element     = $(element)
+
+    if($oldElement.attr('id') != $element.attr('id'))
+    {
+      $oldElement.removeClass('dropdown-active')
+    }
+
+    $element.toggleClass('dropdown-active')
+  }
+
   render() {
 		return (
-			<div id="about" className="about">
+			<div id="about" className="about nav-section">
 				<div className="container-fluid">
 					<div className="row">
 				 		<div className="col-xs-12 col-sm-7 col-lg-6 col-lg-offset-1 about-me">
@@ -29,15 +43,12 @@ class About extends Component {
                 <div id="educationHeaderUnderscore" className="header-underscore right"></div>
               </div>
               <div className="education-wrapper">
-                <div id="contentTIY"
-                     className="content tiy"
-                     onMouseEnter={(e) => { this.addAnimation('#dropdownTIY') }}
-                     onMouseLeave={(e) => { this.removeAnimation('#dropdownTIY') }}>
+                <div id="contentTIY" className="content tiy" onClick={() => this.toggleVisibility('#dropdownTIY')}>
                   <h4>The Iron Yard Cincinnati</h4>
                   <h5>Front-End Engineering with JavaScript and MVC Frameworks</h5>
                   <p>12 Technologies Covered, Graduated Fall 2016</p>
                 </div>
-                <div id="dropdownTIY" className="education-dropdown tiy">
+                <div id="dropdownTIY" className="education-dropdown tiy" onClick={() => this.toggleVisibility('#dropdownTIY')}>
                   <h5>Technologies Covered:</h5>
                   <ul>
                     <li>HTML5</li>
@@ -54,12 +65,12 @@ class About extends Component {
                     <li>Trello</li>
                   </ul>
                 </div>
-                <div className="content cstate cstate1">
+                <div className="content cstate cstate1" onClick={() => this.toggleVisibility('#dropdownCState1')}>
                   <h4>Cincinnati State</h4>
                   <h5>Computer Programming and Systems Analysis</h5>
                   <p>7 Relevant Courses Completed, 2014 - 2016</p>
                 </div>
-                <div id="dropdownCState1" className="education-dropdown cstate1">
+                <div id="dropdownCState1" className="education-dropdown cstate1" onClick={() => this.toggleVisibility('#dropdownCState1')}>
                   <h5>Relevant Coursework:</h5>
                   <ul>
                     <li>Database Design and SQL</li>
@@ -71,12 +82,12 @@ class About extends Component {
                     <li>C Programming</li>
                   </ul>
                 </div>
-                <div className="content cstate cstate2">
+                <div className="content cstate cstate2" onClick={() => this.toggleVisibility('#dropdownCState2')}>
                   <h4>Cincinnati State</h4>
                   <h5>Web and Multimedia Design</h5>
                   <p>8 Relevant Courses Completed, 2012 - 2014</p>
                 </div>
-                <div id="dropdownCState2" className="education-dropdown cstate2">
+                <div id="dropdownCState2" className="education-dropdown cstate2" onClick={() => this.toggleVisibility('#dropdownCState2')}>
                   <h5>Relevant Coursework:</h5>
                   <ul>
                     <li>Design Drawing</li>

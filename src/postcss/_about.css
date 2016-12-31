@@ -2,7 +2,7 @@
 .about {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.1);
-  padding: 80px 0 70px;
+  padding: 120px 0 140px;
 
   h2 {
     margin: 0;
@@ -26,6 +26,7 @@
         margin-bottom: 8px;
         position: relative;
         z-index: 20;
+        cursor: pointer;
 
         &.tiy {
           border-right: 2px solid $color-tiy;
@@ -60,9 +61,9 @@
         position: relative;
         top: 0;
         right: 0;
-        visibility: none;
         opacity: 0;
         overflow: hidden;
+        cursor: pointer;
         z-index: 10;
         transition: max-height 600ms ease,
                     opacity 1.2s ease,
@@ -88,13 +89,9 @@
         }
       }
 
-      .content.tiy:hover ~ .education-dropdown.tiy,
-      .content.cstate1:hover ~ .education-dropdown.cstate1,
-      .content.cstate2:hover ~ .education-dropdown.cstate2,
-      .education-dropdown:hover {
-        visibility: visible;
-        max-height: 500px;
+      .dropdown-active {
         opacity: 1;
+        max-height: 500px;
         margin-bottom: 20px;
       }
     }
@@ -156,6 +153,29 @@
           &.cstate {
             border-right: none;
             border-left: 2px solid $color-cstate;
+          }
+        }
+
+        .education-dropdown {
+
+          h5 {
+            padding-right: 0;
+            padding-left: 14px;
+          }
+
+          ul {
+            padding: 0 0 0 14px;
+            margin-right: 0;
+            margin-left: 14px;
+
+            li {
+
+              &:after {
+                content: '-';
+                position: absolute;
+                left: 14px;
+              }
+            }
           }
         }
       }

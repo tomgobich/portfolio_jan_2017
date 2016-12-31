@@ -48,7 +48,7 @@ class Hero extends Component {
   	]
 
 		return (
-			<div className="hero">
+			<div id="home" className="hero nav-section">
 				<div className="container-fluid full-height">
 					<div className="row full-height">
 				 		<div className="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 full-height">

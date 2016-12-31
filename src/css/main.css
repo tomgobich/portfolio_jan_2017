@@ -100,6 +100,9 @@ button {
 .header .logo-wrap svg {
   height: 30px;
 }
+.header .logo-wrap svg:hover g {
+  fill: #37BC9B;
+}
 .header .logo-wrap svg g {
   fill: #f9f8fd;
 }
@@ -117,7 +120,8 @@ button {
   color: #f6f5f3;
   transition: color 300ms ease;
 }
-.header .navigation a:hover {
+.header .navigation a:hover,
+      .header .navigation a.active {
   color: #37BC9B;
 }
 .header .navigation a.home:hover ~ .h-rule,      .header .navigation a.home.active ~ .h-rule      {
@@ -153,6 +157,9 @@ button {
   padding: 0 10px;
   float: right;
 }
+.header .social-networks li:last-child {
+  padding-right: 0;
+}
 .header .social-networks li img {
   width: 25px;
 }
@@ -160,7 +167,7 @@ button {
   display: none;
   color: rgba(255, 255, 255, 0.6);
   font-size: 1.8em;
-  padding: 12px 0;
+  padding: 9px 0;
   float: right;
   cursor: pointer;
 }
@@ -235,7 +242,7 @@ button {
 .hero {
   width: 100%;
   height: calc(100vh - 51px);
-  background-color: #222;
+  background-color: #333;
   font-size: 34px;
   color: #f6f5f3;
   position: relative;
@@ -316,7 +323,7 @@ button {
 .about {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.1);
-  padding: 80px 0 70px;
+  padding: 120px 0 140px;
 }
 .about h2 {
   margin: 0;
@@ -338,6 +345,7 @@ button {
   margin-bottom: 8px;
   position: relative;
   z-index: 20;
+  cursor: pointer;
 }
 .about .education .education-wrapper .content.tiy {
   border-right: 2px solid rgb(42, 114, 159);
@@ -366,9 +374,9 @@ button {
   position: relative;
   top: 0;
   right: 0;
-  visibility: none;
   opacity: 0;
   overflow: hidden;
+  cursor: pointer;
   z-index: 10;
   transition: max-height 600ms ease,
                     opacity 1.2s ease,
@@ -387,13 +395,9 @@ button {
   position: absolute;
   right: 10px;
 }
-.about .education .education-wrapper .content.tiy:hover ~ .education-dropdown.tiy,
-      .about .education .education-wrapper .content.cstate1:hover ~ .education-dropdown.cstate1,
-      .about .education .education-wrapper .content.cstate2:hover ~ .education-dropdown.cstate2,
-      .about .education .education-wrapper .education-dropdown:hover {
-  visibility: visible;
-  max-height: 500px;
+.about .education .education-wrapper .dropdown-active {
   opacity: 1;
+  max-height: 500px;
   margin-bottom: 20px;
 }
 .about .skills {
@@ -440,10 +444,24 @@ button {
     border-right: none;
     border-left: 2px solid rgb(67, 185, 86);
   }
+  .about .education .education-wrapper .education-dropdown h5 {
+    padding-right: 0;
+    padding-left: 14px;
+  }
+  .about .education .education-wrapper .education-dropdown ul {
+    padding: 0 0 0 14px;
+    margin-right: 0;
+    margin-left: 14px;
+  }
+  .about .education .education-wrapper .education-dropdown ul li:after {
+    content: '-';
+    position: absolute;
+    left: 14px;
+  }
 }
 .portfolio {
   width: 100%;
-  padding: 80px 0 70px;
+  padding: 120px 0 140px;
 }
 .portfolio .portfolio-section-title {
   padding-bottom: 20px;
@@ -554,7 +572,7 @@ button {
 .contact {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.1);
-  padding: 80px 0 70px;
+  padding: 120px 0 140px;
 }
 .contact #thankYouResponse {
   display: none;
@@ -612,7 +630,7 @@ button {
   width: 100%;
   background-color: #222;
   color: rgba(255, 255, 255, 0.8);
-  padding: 20px 0;
+  padding: 40px 0 80px;
 }
 .footer .site-links .site-navigation {
   text-align: center;
@@ -637,4 +655,15 @@ button {
 }
 .footer .social-links .social-networks li:last-child {
   padding-right: 0;
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    text-align: center;
+  }
+  .footer .social-links {
+    padding-top: 20px;
+  }
+  .footer .social-links .social-networks {
+    text-align: center;
+  }
 }

@@ -2,7 +2,7 @@
 .hero {
   width: 100%;
   height: calc(100vh - 51px);
-  background-color: $color-dark;
+  background-color: #333;
   font-size: 34px;
   color: $color-milk;
   position: relative;
