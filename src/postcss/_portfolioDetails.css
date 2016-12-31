@@ -19,12 +19,8 @@
     .cta-wrapper {
       float: right;
 
-      .btn {
+      .btn-primary {
         margin-right: 10px;
-
-        &:last-child {
-          margin-right: 0;
-        }
       }
     }
   }

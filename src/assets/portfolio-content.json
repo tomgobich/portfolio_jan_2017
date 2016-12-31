@@ -3,8 +3,8 @@
     {
       "id": "fsq-live",
   		"title": "FSQ Live",
-      "linkLive": "",
-      "linkGitHub": "",
+      "linkLive": "http://fsqlive.com",
+      "linkGitHub": "https://github.com/tomgobich/3CDC-Final-Project",
   		"devicons": [
   			"devicon-html5-plain-wordmark",
   			"devicon-sass-original",
@@ -35,15 +35,14 @@
         "MongoDB Integration"
       ],
       "fullImages": [
-        "fsqlive-landingpage.png",
-        "instagram.png"
+        "fsqlive-landingpage.png"
       ]
   	},
     {
       "id": "weather-app",
       "title": "Weather",
-      "linkLive": "",
-      "linkGitHub": "",
+      "linkLive": "http://tomgobich.com/tiy_week3_day4_weather_app",
+      "linkGitHub": "https://github.com/tomgobich/tiy_week3_day4_weather_app",
   		"devicons": [
   			"devicon-html5-plain-wordmark",
   			"devicon-sass-original",
@@ -56,16 +55,26 @@
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
       ],
+      "technologies": [
+        "HTML5",
+        "Bootstrap",
+        "CSS3 / SCSS",
+        "JavaScript",
+        "jQuery",
+        "Gulp"
+      ],
+      "involvement": [
+        "Full application"
+      ],
       "fullImages": [
-        "weather.png",
-        "instagram.png"
+        "weather.png"
       ]
     },
     {
       "id": "shopular",
       "title": "Shopular Admin Panel",
-      "linkLive": "",
-      "linkGitHub": "",
+      "linkLive": "https://tomgobich.github.io/tiy_week6_day1_shopular",
+      "linkGitHub": "https://github.com/tomgobich/tiy_week6_day1_shopular",
   		"devicons": [
   			"devicon-html5-plain-wordmark",
   			"devicon-css3-plain-wordmark",
@@ -76,14 +85,31 @@
   		],
   		"featuredBio": "This is temporary text to be replaced with the full content.",
   		"featuredImage": "shopular.png",
-      "fullBio": [],
-      "fullImages": []
+      "fullBio": [
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+      ],
+      "technologies": [
+        "HTML5",
+        "Bootstrap",
+        "CSS3 / SCSS",
+        "JavaScript",
+        "jQuery",
+        "AngularJS 1.x",
+        "Gulp"
+      ],
+      "involvement": [
+        "Full application"
+      ],
+      "fullImages": [
+        "shopular.png"
+      ]
     },
     {
       "id": "todoosy",
   		"title": "ToDoosy To-Do Application",
-      "linkLive": "",
-      "linkGitHub": "",
+      "linkLive": "https://tomgobich.github.io/tiy_week6_day4_todo_angular",
+      "linkGitHub": "https://github.com/tomgobich/tiy_week6_day4_todo_angular",
   		"devicons": [
   			"devicon-html5-plain-wordmark",
   			"devicon-sass-original",
@@ -99,19 +125,24 @@
       ],
       "technologies": [
         "HTML5",
+        "Bootstrap",
         "CSS3 / SCSS",
         "JavaScript",
         "jQuery",
         "AngularJS 1.x"
       ],
-      "involvement": [],
-      "fullImages": []
+      "involvement": [
+        "Full application"
+      ],
+      "fullImages": [
+        "todoosy.png"
+      ]
   	},
     {
       "id": "treetees",
       "title": "TreeTees T-Shirt Shop",
-      "linkLive": "",
-      "linkGitHub": "",
+      "linkLive": "https://tomgobich.github.io/tiy_week3_day1_treetees_tshirt_shop",
+      "linkGitHub": "https://github.com/tomgobich/tiy_week3_day1_treetees_tshirt_shop",
   		"devicons": [
   			"devicon-html5-plain-wordmark",
   			"devicon-sass-original",
@@ -123,6 +154,16 @@
       "fullBio": [
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+      ],
+      "technologies": [
+        "HTML5",
+        "Bootstrap",
+        "CSS3 / SCSS",
+        "JavaScript",
+        "jQuery"
+      ],
+      "involvement": [
+        "Full application"
       ],
       "fullImages": [
         "weather.png",

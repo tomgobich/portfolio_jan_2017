@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import $ from 'jquery';
 import Header from './Header.js';
 import AnimatedButton from './AnimatedButton';
 import PortfolioContent from '../assets/portfolio-content.json';
@@ -56,6 +57,8 @@ class PortfolioDetails extends Component {
 
 	render() {
 
+    $(window).scrollTop(0)
+
     let portfolioID = this.props.params.portfolioID,
         portfolioItem = PortfolioContent.portfolioItems.filter(item => item.id === portfolioID),
         details = portfolioItem[0];
@@ -71,8 +74,8 @@ class PortfolioDetails extends Component {
               </div>
               <div className="col-xs-12 col-sm-4 col-md-3">
                 <div className="cta-wrapper">
-                  <a href="" target="_blank"><AnimatedButton idName="btnVisitLive" classList="btn btn-primary" text="View Live" /></a>
-                  <a href="" target="_blank"><AnimatedButton idName="btnVisitGitHub" classList="btn btn-default" text="View Repo" /></a>
+                  <a href={details.linkLive} target="_blank"><AnimatedButton idName="btnVisitLive" classList="btn btn-primary" text="View Live" /></a>
+                  <a href={details.linkGitHub} target="_blank"><AnimatedButton idName="btnVisitGitHub" classList="btn btn-default" text="View Repo" /></a>
                 </div>
               </div>
             </div>

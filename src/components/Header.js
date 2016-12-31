@@ -33,6 +33,12 @@ class Header extends Component {
 
   render() {
 
+    let routeArray = window.location.pathname.split('/')
+
+    if(routeArray.length > 2) {
+      $('.nav-link.portfolio').addClass('active')
+    }
+
     $(document).scroll(function() {
       const cutoff = $(window).scrollTop()
       let $navSection = $('.nav-section')
@@ -50,6 +56,9 @@ class Header extends Component {
           $('.nav-link.active').removeClass('active')
 
           switch($currentID) {
+            case "home":
+              $('.nav-link.home').addClass('active')
+              break
             case "about":
               $('.nav-link.about').addClass('active')
               break
@@ -60,7 +69,6 @@ class Header extends Component {
               $('.nav-link.contact').addClass('active')
               break
             default:
-              $('.nav-link.home').addClass('active')
               break
           }
 

@@ -557,11 +557,8 @@ button {
 .portfolio-item-details .title-bar .cta-wrapper {
   float: right;
 }
-.portfolio-item-details .title-bar .cta-wrapper .btn {
+.portfolio-item-details .title-bar .cta-wrapper .btn-primary {
   margin-right: 10px;
-}
-.portfolio-item-details .title-bar .cta-wrapper .btn:last-child {
-  margin-right: 0;
 }
 .portfolio-item-details .portfolio-image {
   padding-bottom: 40px;
