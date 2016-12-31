@@ -62,8 +62,8 @@ class Hero extends Component {
 									<h2 className="name-line">I'm Tom Gobich</h2>
 									<h2 className="intro-line"><Typed strings={ strings } /></h2>
 								</div>
-								<Link to="/#contact"><AnimatedButton idName="btnContact" classList="btn btn-primary" text="Contact Me" /></Link>
-                <Link to="/#portfolio"><AnimatedButton idName="btnPortfolio" classList="btn btn-default" text="View My Work" /></Link>
+								<a href="#contact"><AnimatedButton idName="btnContact" classList="btn btn-primary" text="Contact Me" /></a>
+                <a href="#portfolio"><AnimatedButton idName="btnPortfolio" classList="btn btn-default" text="View My Work" /></a>
 							</div>
 						</div>
 			 		</div>

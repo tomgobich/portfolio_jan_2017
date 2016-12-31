@@ -27,10 +27,10 @@ class Footer extends Component {
                 </div>
                 <div className="col-xs-12 col-sm-6 site-links">
                   <nav className="site-navigation">
-                    <Link to="/"><li>Home</li></Link>
-                    <Link to="/#about"><li>About</li></Link>
-                    <Link to="/#portfolio"><li>Portfolio</li></Link>
-                    <Link to="/#contact"><li>Contact</li></Link>
+                    <a href="http://tomgobich.com/"><li>Home</li></a>
+                    <a href="http://tomgobich.com/#about"><li>About</li></a>
+                    <a href="http://tomgobich.com/#portfolio"><li>Portfolio</li></a>
+                    <a href="http://tomgobich.com/#contact"><li>Contact</li></a>
                   </nav>
                 </div>
                 <div className="col-xs-12 col-sm-3 social-links">

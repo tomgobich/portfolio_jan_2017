@@ -2,7 +2,6 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://tomgobich.com/tiy-portfolio",
   "devDependencies": {
     "postcss-cli": "^2.6.0",
     "postcss-import": "^9.0.0",

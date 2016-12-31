@@ -8,7 +8,7 @@ import './css/bootstrap.css';
 import './css/main.css';
 
 ReactDOM.render((
-  <BrowserRouter basename="/tiy-portfolio">
+  <BrowserRouter>
     <div>
       <Match exactly pattern="/" component={App} />
       <Match exactly pattern="/portfolio/:portfolioID" component={PortfolioDetails} />

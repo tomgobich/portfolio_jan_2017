@@ -116,7 +116,7 @@ class Contact extends Component {
                 </li>
               </ul>
               <div id="thankYouResponse">
-                <h3>Thank you for your email! It will be celebrated over for 1-2 days before the favor is returned to you from me!</h3>
+                <h5>Thank you for your email! It will be celebrated over for 1-2 days before the favor is returned to you from me!</h5>
               </div>
               <form ref={(input) => this.contactForm = input} id="contactForm" className="contact-form" onSubmit={(e) => this.submitEmail(e)}>
                 <input type="hidden" name="_next" value="/thanks" />
