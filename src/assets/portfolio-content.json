@@ -36,7 +36,10 @@
         "MongoDB Integration"
       ],
       "fullImages": [
-        "fsqlive-landingpage.png"
+        "fsqlive-1.png",
+        "fsqlive-2.png",
+        "fsqlive-3.png",
+        "fsqlive-4.png"
       ]
   	},
     {
@@ -67,17 +70,17 @@
         "Full application"
       ],
       "fullImages": [
-        "weather.png"
+        "weather-1.jpg",
+        "weather-2.jpg"
       ]
     },
     {
       "id": "shopular",
       "title": "Shopular Admin Panel",
-      "linkLive": "https://tomgobich.github.io/tiy_week6_day1_shopular",
+      "linkLive": "https://tomgobich.github.io/tiy_week6_day1_shopular/#/",
       "linkGitHub": "https://github.com/tomgobich/tiy_week6_day1_shopular",
   		"devicons": [
   			"devicon-html5-plain-wordmark",
-  			"devicon-css3-plain-wordmark",
   			"devicon-sass-original",
   			"devicon-bootstrap-plain-wordmark",
   			"devicon-javascript-plain",
@@ -101,13 +104,15 @@
         "Full application"
       ],
       "fullImages": [
-        "shopular.png"
+        "shopular-1.png",
+        "shopular-2.png",
+        "shopular-3.png"
       ]
     },
     {
       "id": "todoosy",
   		"title": "ToDoosy To-Do Application",
-      "linkLive": "https://tomgobich.github.io/tiy_week6_day4_todo_angular",
+      "linkLive": "https://tomgobich.github.io/tiy_week6_day4_todo_angular/#/",
       "linkGitHub": "https://github.com/tomgobich/tiy_week6_day4_todo_angular",
   		"devicons": [
   			"devicon-html5-plain-wordmark",
@@ -133,7 +138,9 @@
         "Full application"
       ],
       "fullImages": [
-        "todoosy.png"
+        "todoosy-1.png",
+        "todoosy-2.png",
+        "todoosy-3.png"
       ]
   	},
     {
@@ -163,29 +170,46 @@
         "Full application"
       ],
       "fullImages": [
-        "weather.png",
-        "instagram.png"
+        "treetees-1.png",
+        "treetees-2.png",
+        "treetees-3.png",
+        "treetees-4.png",
+        "treetees-5.png"
       ]
     },
     {
-      "id": "devicons-holder",
-      "title": "All Devicons",
-      "linkLive": "",
-      "linkGitHub": "",
+      "id": "instagram-clone",
+      "title": "Instagram Clone",
+      "linkLive": "http://tomgobich.com/tiy_week7_day4_instagram_clone/#/",
+      "linkGitHub": "https://github.com/tomgobich/tiy_week7_day4_instagram_clone",
   		"devicons": [
   			"devicon-html5-plain-wordmark",
-  			"devicon-css3-plain-wordmark",
   			"devicon-sass-original",
   			"devicon-bootstrap-plain-wordmark",
   			"devicon-javascript-plain",
-  			"devicon-angularjs-plain",
-  			"devicon-nodejs-plain",
-  			"devicon-mongodb-plain-wordmark"
+  			"devicon-angularjs-plain"
   		],
-  		"featuredBio": "This is a temporary listing to store the devicons for me! :D",
+  		"featuredBio": "This is temporary text to be replaced with the full content.",
   		"featuredImage": "instagram.png",
-      "fullBio": [],
-      "fullImages": []
+      "fullBio": [
+        "Content currently in development, please check back soon!"
+      ],
+      "technologies": [
+        "HTML5",
+        "Bootstrap",
+        "CSS3 / SCSS",
+        "JavaScript",
+        "jQuery",
+        "AngularJS 1.x"
+      ],
+      "involvement": [
+        "Front-End Functionalities and Design"
+      ],
+      "fullImages": [
+        "instagram-1.jpg",
+        "instagram-2.jpg",
+        "instagram-3.jpg"
+      ]
     }
   ]
 }

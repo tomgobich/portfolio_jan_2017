@@ -98,10 +98,10 @@ class Header extends Component {
         						<div className="row nav-large">
         							<div className="col-md-9">
         								<nav id="menu" className="navigation">
-        									<a className="nav-link home" activeClassName="active" href="http://tomgobich.com/"><li>Home</li></a>
-        									<a className="nav-link about" data-anchor="about" activeClassName="active" href="http://tomgobich.com/#about"><li>About</li></a>
-        									<a className="nav-link portfolio" data-anchor="portfolio" activeClassName="active" href="http://tomgobich.com/#portfolio"><li>Portfolio</li></a>
-        									<a className="nav-link contact" data-anchor="contact" activeClassName="active" href="http://tomgobich.com/#contact"><li>Contact</li></a>
+        									<a className="nav-link home" href="http://tomgobich.com/"><li>Home</li></a>
+        									<a className="nav-link about" href="http://tomgobich.com/#about"><li>About</li></a>
+        									<a className="nav-link portfolio" href="http://tomgobich.com/#portfolio"><li>Portfolio</li></a>
+        									<a className="nav-link contact" href="http://tomgobich.com/#contact"><li>Contact</li></a>
         									<div className="h-rule"></div>
         								</nav>
         							</div>
@@ -173,10 +173,10 @@ class Header extends Component {
                       </a>
                     </nav>
                     <nav className="navigation">
-                      <a className="nav-link home" activeClassName="active" href="http://tomgobich.com/"><li>Home</li></a>
-                      <a className="nav-link about" data-anchor="about" activeClassName="active" href="http://tomgobich.com/#about"><li>About</li></a>
-                      <a className="nav-link portfolio" data-anchor="portfolio" activeClassName="active" href="http://tomgobich.com/#portfolio"><li>Portfolio</li></a>
-                      <a className="nav-link contact" data-anchor="contact" activeClassName="active" href="http://tomgobich.com/#contact"><li>Contact</li></a>
+                      <a className="nav-link home" href="http://tomgobich.com/"><li>Home</li></a>
+                      <a className="nav-link about" href="http://tomgobich.com/#about"><li>About</li></a>
+                      <a className="nav-link portfolio" href="http://tomgobich.com/#portfolio"><li>Portfolio</li></a>
+                      <a className="nav-link contact" href="http://tomgobich.com/#contact"><li>Contact</li></a>
                       <div className="h-rule"></div>
                     </nav>
                   </div>
