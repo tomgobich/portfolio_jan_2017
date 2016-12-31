@@ -31,13 +31,14 @@ class Header extends Component {
     $('#menuIcon').toggleClass('active')
   }
 
-  render() {
-
-    let routeArray = window.location.pathname.split('/')
-
-    if(routeArray.length > 2) {
+  componentDidMount() {
+    if(window.location.pathname.includes('/portfolio/')) {
+      $('.nav-link.active').removeClass('active')
       $('.nav-link.portfolio').addClass('active')
     }
+  }
+
+  render() {
 
     $(document).scroll(function() {
       const cutoff = $(window).scrollTop()
@@ -54,7 +55,7 @@ class Header extends Component {
           let $currentID = $('.current').attr('id')
 
           $('.nav-link.active').removeClass('active')
-
+          console.log($currentID)
           switch($currentID) {
             case "home":
               $('.nav-link.home').addClass('active')
@@ -74,8 +75,8 @@ class Header extends Component {
 
           return false
         }
-      });
-    });
+      })
+    })
 
   	return (
   		<div>
