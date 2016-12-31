@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 import $ from 'jquery';
+import Isvg from 'react-inlinesvg';
+import GitHub from '../images/github.svg';
+import Twitter from '../images/twitter.svg';
+import LinkedIn from '../images/linkedin.svg';
 
 
 
@@ -31,9 +35,27 @@ class Footer extends Component {
                 </div>
                 <div className="col-xs-12 col-sm-3 social-links">
                   <nav className="social-networks">
-                    <a className="github"><li><img src="http://placehold.it/30x30" alt="GitHub" /></li></a>
-                    <a className="twitter"><li><img src="http://placehold.it/30x30" alt="Twitter" /></li></a>
-                    <a className="linkedin"><li><img src="http://placehold.it/30x30" alt="LinkedIn" /></li></a>
+                    <a className="github" target="_blank" href="http://github.com/tomgobich">
+                      <li>
+                        <Isvg src={ GitHub }>
+                          <img src={ GitHub } alt="GitHub" />
+                        </Isvg>
+                      </li>
+                    </a>
+                    <a className="twitter" target="_blank" href="http://twitter.com/tomgobich">
+                      <li>
+                        <Isvg src={ Twitter }>
+                          <img src={ Twitter } alt="Twitter" />
+                        </Isvg>
+                      </li>
+                    </a>
+                    <a className="linkedin" target="_blank" href="http://linkedin.com/in/tomgobich">
+                      <li>
+                        <Isvg src={ LinkedIn }>
+                          <img src={ LinkedIn } alt="LinkedIn" />
+                        </Isvg>
+                      </li>
+                    </a>
                   </nav>
                 </div>
               </div>

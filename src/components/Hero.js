@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router';
 import $ from 'jquery';
 import Particles from 'react-particles-js';
 import ParticleConfig from '../assets/particles-config.json';
@@ -61,8 +62,8 @@ class Hero extends Component {
 									<h2 className="name-line">I'm Tom Gobich</h2>
 									<h2 className="intro-line"><Typed strings={ strings } /></h2>
 								</div>
-								<AnimatedButton idName="btnContact" classList="btn btn-primary" text="Contact Me" />
-                <AnimatedButton idName="btnPortfolio" classList="btn btn-default" text="View My Work" />
+								<Link to="/#contact"><AnimatedButton idName="btnContact" classList="btn btn-primary" text="Contact Me" /></Link>
+                <Link to="/#portfolio"><AnimatedButton idName="btnPortfolio" classList="btn btn-default" text="View My Work" /></Link>
 							</div>
 						</div>
 			 		</div>
@@ -71,7 +72,7 @@ class Hero extends Component {
 					<Particles className="particles" params={this.state.particleConfig} />
 				</div>
         <div className="chevron-down">
-          <i className="fa fa-chevron-down animated infinite fadeInDown" aria-hidden="true"></i>
+          <Link to="/#about"><i className="fa fa-chevron-down animated infinite fadeInDown" aria-hidden="true"></i></Link>
         </div>
 			</div>
 		);

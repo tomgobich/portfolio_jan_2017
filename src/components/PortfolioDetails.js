@@ -71,8 +71,8 @@ class PortfolioDetails extends Component {
               </div>
               <div className="col-xs-12 col-sm-4 col-md-3">
                 <div className="cta-wrapper">
-                  <AnimatedButton idName="btnVisitLive" classList="btn btn-primary" text="View Live" />
-                  <AnimatedButton idName="btnVisitGitHub" classList="btn btn-default" text="View Repo" />
+                  <a href="" target="_blank"><AnimatedButton idName="btnVisitLive" classList="btn btn-primary" text="View Live" /></a>
+                  <a href="" target="_blank"><AnimatedButton idName="btnVisitGitHub" classList="btn btn-default" text="View Repo" /></a>
                 </div>
               </div>
             </div>

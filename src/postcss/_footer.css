@@ -27,15 +27,21 @@
       padding: 0;
 
       li {
-        padding: 0 10px;
-        display: inline-block;
-
-        img {
-          width: 25px;
-        }
+        padding: 3px 16px;
+        float: right;
 
         &:last-child {
           padding-right: 0;
+        }
+
+        svg {
+          height: 18px;
+          fill: $color-white;
+          transition: all 600ms ease;
+
+          &:hover {
+            fill: $color-green;
+          }
         }
       }
     }
@@ -51,6 +57,11 @@
 
       .social-networks {
         text-align: center;
+
+        li {
+          float: none;
+          display: inline-block;
+        }
       }
     }
   }
