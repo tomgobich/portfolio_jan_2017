@@ -15,7 +15,11 @@
   		"featuredBio": "A group project built in conjunction with The Iron Yard and 3CDC in an effort to add interativity to Cincinnati's New Years Eve Blast",
   		"featuredImage": "fsqlive-landingpage.png",
       "fullBio": [
-        "Content currently in development, please check back soon!"
+        "FSQ Live is an application built in conjunction with 3CDC to add interactivity to their Fountain Square New Years Eve Blast celebration. This application was built within three weeks by a group of four, including myself, as our final project during our cohort at The Iron Yard for Front-End Engineering.",
+        "FSQ Live is a polling application that live-updates utilizing Socket.io. It features a landing page to tell the user a bit about the event and the application. The landing page also doubles as the sign up / login page. Upon signing up users are then redirected to the home page, where they can vote on any active polls. Upon voting on an active poll, that poll will then display in the \"Polls You've Voted On\" section where users can tap on a poll to see the live-results for that poll question.",
+        "This application also features an Admin portion, where the event coordinator was able to toggle the poll questions inactive or active to their needs. Upon toggling a poll question via the admin panel, the poll question would then immediately be accessible to users on the home page to vote on. The admin panel also features the live results for the selected poll question, including total votes placed. Finally, the admin panel includes for each poll question a billboard view meant for  the big screen down at Fountain Square. The billboard view was to display live results to those attending the event at Fountain Square.",
+        "This application operates using our custom build Back-End built with NodeJS and Express. Our information is persisted with MongoDB and Mongoose and passed to the Front-End using our API routes. Our sign up /login system was built using Satellizer.",
+        "My role in building this application was scattered throughout the whole application. For the most part I was in-charge of building the Back-End of the application and the Admin panel. I build the underlying structure of the Back-End and our database calls. I as well handled the setup of Satellizer with the Front-End and Back-End and the incorporation of the Facebook and Email authentication. I led the design and development of the Admin panel, and the development of the Billboard view. I also built the bar charts used to show live user voting. I as well helped out on the Landing, Home, and Dev Team pages where needed."
       ],
       "technologies": [
         "HTML5",
@@ -24,7 +28,8 @@
         "jQuery",
         "AngularJS 1.x",
         "NodeJS / Express",
-        "MongoDB / Mongoose"
+        "MongoDB / Mongoose",
+        "Socket.io"
       ],
       "involvement": [
         "Ideation Process",
@@ -56,7 +61,8 @@
   		"featuredBio": "Enter your location to get a beautiful 7-day forecast listing including the day's condition, high temperature, and low temperature",
   		"featuredImage": "weather.png",
       "fullBio": [
-        "Content currently in development, please check back soon!"
+        "This beautiful 7-Day weather application was built in one day on week three, day four during my time at The Iron Yard for Front-End Engineering. Enter in any location world-wide and get back the 7-Day forecast for that location! You can also easily toggle between Fahrenheit and Celsius in the top-right corner of the application.",
+        "This application also features an animated background gradient that smoothly flows from one color to another, which was built with SCSS. The main functionality of this application was built with JavaScript and jQuery, and the weather data is received via an AJAX API call to OpenWeatherMap's API service."
       ],
       "technologies": [
         "HTML5",
@@ -86,10 +92,12 @@
   			"devicon-javascript-plain",
   			"devicon-angularjs-plain"
   		],
-  		"featuredBio": "This is temporary text to be replaced with the full content.",
+  		"featuredBio": "A admin store control panel that allows the creation and full editing of an item and also features smooth animations",
   		"featuredImage": "shopular.png",
       "fullBio": [
-        "Content currently in development, please check back soon!"
+        "Shopular was built as my first AngularJS application throughout three days during week six at The Iron Yard for Front-End Engineering. This application is an admin product listing page which displays product information in a table format.",
+        "When you first enter the application you're asked to provide a username. Upon entering a username you're taken to the main admin view with the product listings. Your login timestamp is saved and always displayed to you, along with a logout link. Click on a product and you can edit all of it's details, or add a new item by clicking \"Add New Item\" at the bottom of the table.",
+        "All information for this application is persisted using the browsers localstorage. This application also features smooth page-to-page animations to improve the user-experience."
       ],
       "technologies": [
         "HTML5",
@@ -121,10 +129,11 @@
   			"devicon-javascript-plain",
   			"devicon-angularjs-plain"
   		],
-  		"featuredBio": "This is temporary text to be replaced with the full content.",
+  		"featuredBio": "A to-do application that allows you to easily create, complete, complete all, delete, and undelete to-do tasks",
   		"featuredImage": "todoosy.png",
       "fullBio": [
-        "Content currently in development, please check back soon!"
+        "ToDoosy was built over the weekend during my sixth week at The Iron Yard for Front-End Engineering. This application is a To-Do application that keeps track of all your tasks, all your current tasks, and all your completed tasks. It features an always visible \"Enter Task\" input located at the bottom of your screen. It also features a user-friendly message that changes based off your current task completion status.",
+        "Enter a task at the bottom of the screen to get started, then hit enter to submit your task to ToDoosy! Once your task is complete hit the blank square to the left of your task to mark it complete. If you no longer want your task hover over the task and click the newly visible red X off to the right. Accidentally delete a task you didn't mean to? Hit \"Undo last delete\" to get it back. Want to delete all your completed tasks? Hit \"Delete all completed tasks.\" Accidentally delete all your completed tasks but didn't mean to? Hitting \"Undo last delete\" will take care of that as well! Click the tabs at the top of the application to quickly switch between all your tasks, all your current tasks, and all your completed tasks. All information on this application is persisted using localstorage, so feel free to leave and come back to it as need be!"
       ],
       "technologies": [
         "HTML5",
@@ -154,17 +163,18 @@
   			"devicon-bootstrap-plain-wordmark",
   			"devicon-javascript-plain"
   		],
-  		"featuredBio": "This is temporary text to be replaced with the full content.",
+  		"featuredBio": "A T-Shirt storefront built in vanilla JavaScript that features a site-wide cart system persisted with localstorage",
   		"featuredImage": "treetees.png",
       "fullBio": [
-        "Content currently in development, please check back soon!"
+        "TreeTees is a full website built in one day on week three, day one during my time at The Iron Yard for Front-End Engineering. This site's functionality is built in vanilla JavaScript and styled with SCSS.",
+        "This site features four pages Home, About, Products, and Contact. The main purpose of the site is to serve as a t-shirt storefront. It features a working cart system persisted with localstorage, so it saves from page-to-page. The cart is visable site-wide and features the ability to quickly remove one or all of the items in the cart. You can also quickly view the number of items in your cart when the cart is in it's minimized state. When expanded you can view your item's price, your cart's total, tax, and the amount due.",
+        "Both the About Us and Contact pages feature filler content to give the site a more authentic appearance."
       ],
       "technologies": [
         "HTML5",
         "Bootstrap",
         "CSS3 / SCSS",
-        "JavaScript",
-        "jQuery"
+        "JavaScript"
       ],
       "involvement": [
         "Full application"
@@ -189,10 +199,13 @@
   			"devicon-javascript-plain",
   			"devicon-angularjs-plain"
   		],
-  		"featuredBio": "This is temporary text to be replaced with the full content.",
+  		"featuredBio": "An Instagram Clone application that allows anyone to submit an image with title and details off to the database to be displayed to all",
   		"featuredImage": "instagram.png",
       "fullBio": [
-        "Content currently in development, please check back soon!"
+        "This Instagram Clone assignment was built over the course of a weekend during my seventh week at The Iron Yard for Front-End Engineering. The Back-End was provided for us, our goal was to design and complete the Front-End and interface with the Back-End to complete the application.",
+        "Upon opening the application you're welcomed by all the submitted images saved on the database. Hover over an image and you can easily see the post's title and like count. Click the heart icon to increment the like count by one. Click on an image to go into the details view for the image where you can see the title, how long ago it was posted and by whom, and the description for the post. Under the image is the like count which is also easily visible. Double-click on the image in the details view to increment the like-count and active a neat scaling heart animation displayed over the image.",
+        "Click \"Post Image\" in the header to navigate to the page where you can post an image. Enter a title, link to the image, and description for the image, then click submit to send your image off to the database with the rest.",
+        "This application also features hover and page-to-page animations to improve the user-experience. This application as well auto-scales images to be square. The images submitted can be any aspect-ratio and appear perfectly square and even in the application. This is done using SCSS."
       ],
       "technologies": [
         "HTML5",
