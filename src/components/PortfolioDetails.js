@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
-import Header from './Header.js';
+import Header from './Header';
+import Footer from './Footer';
 import AnimatedButton from './AnimatedButton';
 import PortfolioContent from '../assets/portfolio-content.json';
 
@@ -98,6 +99,7 @@ class PortfolioDetails extends Component {
             </div>
           </div>
         </div>
+        <Footer />
 			</div>
 		);
 	}
