@@ -11,7 +11,7 @@ import LinkedIn from '../images/linkedin.svg';
 class Footer extends Component {
 
   getYear() {
-    let date = new Date;
+    let date = new Date();
     return date.getFullYear();
   }
 

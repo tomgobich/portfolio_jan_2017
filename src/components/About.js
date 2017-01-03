@@ -8,7 +8,7 @@ class About extends Component {
     let $oldElement  = $('.dropdown-active')
     let $element     = $(element)
 
-    if($oldElement.attr('id') != $element.attr('id'))
+    if($oldElement.attr('id') !== $element.attr('id'))
     {
       $oldElement.removeClass('dropdown-active')
     }
