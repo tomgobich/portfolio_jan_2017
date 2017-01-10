@@ -385,7 +385,7 @@ button {
   max-height: 0px;
   font-weight: 200;
   position: relative;
-  top: 0;
+  top: 10px;
   right: 0;
   opacity: 0;
   overflow: hidden;
@@ -411,7 +411,6 @@ button {
 .about .education .education-wrapper .dropdown-active {
   opacity: 1;
   max-height: 500px;
-  margin-bottom: 20px;
 }
 .about .skills {
   text-align: center;

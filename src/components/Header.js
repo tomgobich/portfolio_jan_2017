@@ -98,7 +98,7 @@ class Header extends Component {
         						<div className="row nav-large">
         							<div className="col-md-9">
         								<nav id="menu" className="navigation">
-        									<a className="nav-link home" href="http://tomgobich.com/"><li>Home</li></a>
+        									<a className="nav-link home active" href="http://tomgobich.com/"><li>Home</li></a>
         									<a className="nav-link about" href="http://tomgobich.com/#about"><li>About</li></a>
         									<a className="nav-link portfolio" href="http://tomgobich.com/#portfolio"><li>Portfolio</li></a>
         									<a className="nav-link contact" href="http://tomgobich.com/#contact"><li>Contact</li></a>
