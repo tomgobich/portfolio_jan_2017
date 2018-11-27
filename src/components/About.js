@@ -29,7 +29,7 @@ class About extends Component {
               <div className="header-underscore"></div>
               <p className="text-block">
                 Hey there, nice to meet you! My name is Tom Gobich, I'm a Front-End Developer and a graduate from The Iron Yard Cincinnati.
-                I'm a driven, family-oriented, person who looks at obsticales and difficulties as opportunities to learn and grow.
+                I'm a driven, family-oriented, person who looks at obstacle and difficulties as opportunities to learn and grow.
                 I have educational knowledge ranging from design to Back-End technologies - but I specialize in Front-End Development.
               </p>
               <p className="text-block">
